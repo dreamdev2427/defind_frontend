@@ -116,7 +116,7 @@ const SignUp = () => {
         <div className="mt-3 rounded-[16px] border-[1px] border-[#35383d] min-w-[480px] min-h-[64px] flex  px-4 justify-between items-center ">
           <div className="flex justify-start">
             <img src={MailSVG} alt="mailsvg" className="w-8 h-5"></img>
-            <div className="ml-4">Login with verified email</div>
+            <div className="ml-6">Login with verified email</div>
           </div>
           <img src={RightArrowSVG} alt="right arrow" className="w-4 h-4" />
         </div>
