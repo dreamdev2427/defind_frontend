@@ -5,6 +5,7 @@ import Settings from "./pages/Settings";
 import ProfileEdit from "./pages/ProfileEdit";
 import Profile from "./pages/Profile";
 import Login from "./pages/Login";
+import LoginWithEmail from "./pages/LoginWithEmail";
 import LockLP from "./pages/LockLP";
 import Home from "./pages/Home";
 import Favorite from "./pages/Favorite";
@@ -28,6 +29,7 @@ function App() {
           <Route path="/profile_edit" element={<ProfileEdit />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/login_with_email" element={<LoginWithEmail />} />
           <Route path="/lock_lp" element={<LockLP />} />
           <Route path="/favorite" element={<Favorite />} />
           <Route path="/faq" element={<FAQ />} />
