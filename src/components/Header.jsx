@@ -17,7 +17,7 @@ const Header = () => {
         </div>
       </div>
       <div className="flex justify-end">
-        <DropdownSearch className="w-8 h-8" />
+        <DropdownSearch className="w-8 h-8 relative" />
         <img src={NotifySVG} alt="search icon" className="w-8 h-8 ml-2" />
         <img src={AvatarPNG} alt="search icon" className="w-8 h-8 ml-2" />
       </div>
