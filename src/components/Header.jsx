@@ -1,7 +1,7 @@
 import LogoSVG from "../assets/logo.svg";
-import SearchSVG from "../assets/nav_search_icon.svg";
 import NotifySVG from "../assets/nav_notify_icon.svg";
 import AvatarPNG from "../assets/Avatar.png";
+import DropdownSearch from "./DropdownSearch";
 
 const Header = () => {
   return (
@@ -17,7 +17,7 @@ const Header = () => {
         </div>
       </div>
       <div className="flex justify-end">
-        <img src={SearchSVG} alt="search icon" className="w-8 h-8" />
+        <DropdownSearch className="w-8 h-8" />
         <img src={NotifySVG} alt="search icon" className="w-8 h-8 ml-2" />
         <img src={AvatarPNG} alt="search icon" className="w-8 h-8 ml-2" />
       </div>
