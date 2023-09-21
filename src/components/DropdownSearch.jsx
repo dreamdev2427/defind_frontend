@@ -75,7 +75,7 @@ function DropdownSearch() {
         <img src={SearchSVG} alt="search icon" className="w-8 h-8"></img>
       )}
       {showDropdown && (
-        <div className="absolute right-0 top-8 pt-1 min-w-[230px] 0  ">
+        <div className="absolute right-0 top-8 pt-1 min-w-[230px] z-20  ">
           <div className="mt-0 border border-t-0 rounded-b shadow text-white bg-[#1D1D25] border-[#4C4C56] ">
             {searchResult.map((item, index) => (
               <div
