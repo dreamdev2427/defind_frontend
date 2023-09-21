@@ -1,30 +1,16 @@
+import React, { useRef } from "react";
 import Product from "./Product";
 import Slider from "react-slick";
 import { offerProducts } from "../../utils/constants";
 import { getRandomProducts } from "../../utils/functions";
 
-import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import LeftBlackPNG from "../../assets/smallLeftBlue.png";
+import RightBlackPNG from "../../assets/smallRightBlue.png";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./ProductSlider.css";
-
-const PreviousBtn = ({ className, onClick }) => {
-  return (
-    <div className={className} onClick={onClick}>
-      <ArrowBackIosIcon />
-    </div>
-  );
-};
-
-const NextBtn = ({ className, onClick }) => {
-  return (
-    <div className={className} onClick={onClick}>
-      <ArrowForwardIosIcon />
-    </div>
-  );
-};
+import { Link } from "react-router-dom";
 
 export const settings = {
   dots: false,
@@ -34,8 +20,6 @@ export const settings = {
   slidesToScroll: 6,
   initialSlide: 1,
   swipe: false,
-  prevArrow: <PreviousBtn />,
-  nextArrow: <NextBtn />,
   responsive: [
     {
       breakpoint: 1024,
@@ -61,19 +45,59 @@ export const settings = {
   ],
 };
 
-const ProductSlider = ({ title }) => {
+const ProductSlider = ({ title, items }) => {
+  const sliderRef = useRef();
+
   return (
     <section className="bg-transparent w-full px-10 shadow overflow-hidden">
-      {/* <!-- header --> */}
       <div className="flex px-6 py-3 justify-between items-center">
         <h1 className="text-xl font-medium">{title}</h1>
       </div>
       <hr />
-      {/* <!-- header --> */}
-
-      <Slider {...settings} className="border-none">
-        {getRandomProducts(offerProducts, 12).map((item, i) => (
-          <Product {...item} key={i} />
+      <div className="flex gap-2 w-full justify-end px-10">
+        <img
+          src={LeftBlackPNG}
+          className="w-8 h-8"
+          alt="prev button"
+          onClick={() => sliderRef.current.slickPrev()}
+        />
+        <img
+          src={RightBlackPNG}
+          className="w-8 h-8"
+          alt="next button"
+          onClick={() => sliderRef.current.slickNext()}
+        />
+      </div>
+      <Slider {...settings} className="border-none" ref={sliderRef}>
+        {items.map((item, i) => (
+          <Link
+            key={i}
+            to="/products"
+            className="flex flex-col items-center gap-1.5 p-6 cursor-pointer"
+          >
+            <div className="min-w-36 min-h-36 transform hover:scale-110 transition-transform duration-150 ease-out relative">
+              <img
+                draggable="false"
+                className="w-full h-full object-contain overflow-hidden"
+                src={item.image}
+                alt={item.text}
+              />
+              <div className="bg-gradient-to-t from-[#000000af] w-full h-1/2 absolute bottom-0 z-5 rounded-b-[10px] "></div>
+              <h2 className="text-md font-bold  ml-2 absolute bottom-2 text-white z-10">
+                {item.text}
+              </h2>
+            </div>
+            <div className="flex gap-1 mt-4">
+              {item.property.map((x, index) => (
+                <div
+                  key={index}
+                  className=" text-sm text-[#aaabb6] bg-[#aaabb63f] p-2 rounded-[6px] ml-1"
+                >
+                  {x}
+                </div>
+              ))}
+            </div>
+          </Link>
         ))}
       </Slider>
     </section>

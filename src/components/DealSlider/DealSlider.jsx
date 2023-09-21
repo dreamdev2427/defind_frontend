@@ -2,6 +2,7 @@ import Product from "./Product";
 import Slider from "react-slick";
 import { offerProducts } from "../../utils/constants";
 import { getRandomProducts } from "../../utils/functions";
+
 import LeftBluePNG from "../../assets/leftBlue.png";
 import RightBluePNG from "../../assets/rightBlue.png";
 
