@@ -73,7 +73,7 @@ const ProductSlider = ({ title, items }) => {
         {items.map((item, i) => (
           <Link
             key={i}
-            to="/products"
+            to="/detailed_project"
             className="flex flex-col items-center gap-1.5 p-6 cursor-pointer"
           >
             <div className="min-w-36 min-h-36 transform hover:scale-110 transition-transform duration-150 ease-out relative">
