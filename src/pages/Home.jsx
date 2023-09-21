@@ -78,19 +78,11 @@ const Home = () => {
 
       <DealSlider />
 
-      <div className="text-white mt-8 mb-2 ml-10 text-left">
-        Top 10 Trending
-      </div>
+      <ProductSlider title="Top 10 Trending" items={exampleItems} />
 
-      <ProductSlider items={exampleItems} />
-      <div className="text-white mt-8 mb-2 ml-10 text-left">Most Expected</div>
+      <ProductSlider title="Most Expected" items={exampleItems} />
 
-      <ProductSlider items={exampleItems} />
-      <div className="text-white mt-8 mb-2 ml-10 text-left">
-        Popular On Defined
-      </div>
-
-      <ProductSlider items={exampleItems} />
+      <ProductSlider title="Popular On Defined" items={exampleItems} />
     </div>
   );
 };
