@@ -20,8 +20,8 @@ import "./App.css";
 function App() {
   return (
     <div className="App bg-[#0E0E16] ">
-      <Header />
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<Signup />} />

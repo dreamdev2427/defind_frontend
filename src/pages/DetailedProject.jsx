@@ -391,7 +391,7 @@ const DetailedProject = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col justify-between items-end">
+                <div className="flex flex-col justify-between items-end px-5">
                   <img src={DotsIcon} className="w-5 h-5" alt="dot icon" />
                   <div className="flex gap-3">
                     <img
@@ -426,7 +426,7 @@ const DetailedProject = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col justify-between items-end">
+                <div className="flex flex-col justify-between items-end px-5">
                   <img src={DotsIcon} className="w-5 h-5" alt="dot icon" />
                   <div className="flex gap-3">
                     <img
@@ -461,7 +461,7 @@ const DetailedProject = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col justify-between items-end">
+                <div className="flex flex-col justify-between items-end px-5">
                   <img src={DotsIcon} className="w-5 h-5" alt="dot icon" />
                   <div className="flex gap-3">
                     <img
@@ -496,7 +496,7 @@ const DetailedProject = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col justify-between items-end">
+                <div className="flex flex-col justify-between items-end px-5">
                   <img src={DotsIcon} className="w-5 h-5" alt="dot icon" />
                   <div className="flex gap-3">
                     <img
@@ -531,7 +531,7 @@ const DetailedProject = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col justify-between items-end">
+                <div className="flex flex-col justify-between items-end px-5">
                   <img src={DotsIcon} className="w-5 h-5" alt="dot icon" />
                   <div className="flex gap-3">
                     <img
@@ -552,7 +552,7 @@ const DetailedProject = () => {
               type="string"
               placeholder="Type here..."
               className="mt-10 w-full min-h-[135px] rounded-xl border-[#4C4C56] border-[1px] bg-[#1D1D25]
-              focus:border-[#4C4C56] focus:border-[1px] text-white
+              focus:border-[#4C4C56] focus:border-[1px] text-white px-2
               "
             />
             <div className="flex justify-start">
