@@ -79,7 +79,7 @@ const ProductSlider = ({ title, items }) => {
             <div className="min-w-36 min-h-36 transform hover:scale-110 transition-transform duration-150 ease-out relative">
               <img
                 draggable="false"
-                className="w-full h-full object-contain overflow-hidden"
+                className="object-cover w-full h-full"
                 src={item.image}
                 alt={item.text}
               />
