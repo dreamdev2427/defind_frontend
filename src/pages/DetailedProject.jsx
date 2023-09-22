@@ -212,7 +212,147 @@ const DetailedProject = () => {
               />
             </div>
             <div className="w-full mt-5">
-              <div className="flex justify-between border-b-[#43465E] border-b-[1px] pb-2">
+              <div className="flex justify-between border-b-[#43465E] border-b-[1px] py-5">
+                <div className="flex justify-start">
+                  <img
+                    src={Avatar2PNG}
+                    className="w-16 h-16"
+                    alt="avatar"
+                  ></img>
+                  <div className="flex flex-col ml-5">
+                    <div className="text-white text-left">Aurelien H</div>
+                    <div className="text-[#aaabb6] text-sm text-left">
+                      The NFT began as a group of extraordinary individuals who
+                      were assembled to defeat Loki and his Chitauri army in New
+                      York City. Since then, the team has expanded its roster
+                      The NFT began as a group of extraordinary individuals who
+                      were assembled to defeat Loki and his Chitauri ..
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col justify-between items-end">
+                  <img src={DotsIcon} className="w-5 h-5" alt="dot icon" />
+                  <div className="flex gap-3">
+                    <img
+                      src={ShieldCrossIcon}
+                      className="w-5 h-5"
+                      alt="cross icon"
+                    />
+                    <img
+                      src={ShieldCheckIcon}
+                      className="w-5 h-5"
+                      alt="check icon"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex justify-between border-b-[#43465E] border-b-[1px] py-5">
+                <div className="flex justify-start">
+                  <img
+                    src={Avatar2PNG}
+                    className="w-16 h-16"
+                    alt="avatar"
+                  ></img>
+                  <div className="flex flex-col ml-5">
+                    <div className="text-white text-left">Aurelien H</div>
+                    <div className="text-[#aaabb6] text-sm text-left">
+                      The NFT began as a group of extraordinary individuals who
+                      were assembled to defeat Loki and his Chitauri army in New
+                      York City. Since then, the team has expanded its roster
+                      The NFT began as a group of extraordinary individuals who
+                      were assembled to defeat Loki and his Chitauri ..
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col justify-between items-end">
+                  <img src={DotsIcon} className="w-5 h-5" alt="dot icon" />
+                  <div className="flex gap-3">
+                    <img
+                      src={ShieldCrossIcon}
+                      className="w-5 h-5"
+                      alt="cross icon"
+                    />
+                    <img
+                      src={ShieldCheckIcon}
+                      className="w-5 h-5"
+                      alt="check icon"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex justify-between border-b-[#43465E] border-b-[1px] py-5">
+                <div className="flex justify-start">
+                  <img
+                    src={Avatar2PNG}
+                    className="w-16 h-16"
+                    alt="avatar"
+                  ></img>
+                  <div className="flex flex-col ml-5">
+                    <div className="text-white text-left">Aurelien H</div>
+                    <div className="text-[#aaabb6] text-sm text-left">
+                      The NFT began as a group of extraordinary individuals who
+                      were assembled to defeat Loki and his Chitauri army in New
+                      York City. Since then, the team has expanded its roster
+                      The NFT began as a group of extraordinary individuals who
+                      were assembled to defeat Loki and his Chitauri ..
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col justify-between items-end">
+                  <img src={DotsIcon} className="w-5 h-5" alt="dot icon" />
+                  <div className="flex gap-3">
+                    <img
+                      src={ShieldCrossIcon}
+                      className="w-5 h-5"
+                      alt="cross icon"
+                    />
+                    <img
+                      src={ShieldCheckIcon}
+                      className="w-5 h-5"
+                      alt="check icon"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex justify-between border-b-[#43465E] border-b-[1px] py-5">
+                <div className="flex justify-start">
+                  <img
+                    src={Avatar2PNG}
+                    className="w-16 h-16"
+                    alt="avatar"
+                  ></img>
+                  <div className="flex flex-col ml-5">
+                    <div className="text-white text-left">Aurelien H</div>
+                    <div className="text-[#aaabb6] text-sm text-left">
+                      The NFT began as a group of extraordinary individuals who
+                      were assembled to defeat Loki and his Chitauri army in New
+                      York City. Since then, the team has expanded its roster
+                      The NFT began as a group of extraordinary individuals who
+                      were assembled to defeat Loki and his Chitauri ..
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col justify-between items-end">
+                  <img src={DotsIcon} className="w-5 h-5" alt="dot icon" />
+                  <div className="flex gap-3">
+                    <img
+                      src={ShieldCrossIcon}
+                      className="w-5 h-5"
+                      alt="cross icon"
+                    />
+                    <img
+                      src={ShieldCheckIcon}
+                      className="w-5 h-5"
+                      alt="check icon"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex justify-between border-b-[#43465E] border-b-[1px] py-5">
                 <div className="flex justify-start">
                   <img
                     src={Avatar2PNG}
