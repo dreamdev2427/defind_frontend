@@ -45,7 +45,7 @@ export const settings = {
   ],
 };
 
-const ProductSlider = ({ title, items }) => {
+const ProductSlider = ({ title, items, hideArrow }) => {
   const sliderRef = useRef();
 
   return (
@@ -54,20 +54,24 @@ const ProductSlider = ({ title, items }) => {
         <div className=" px-6 py-3 ">
           <h1 className="text-xl font-medium text-white">{title}</h1>
         </div>
-        <div className="flex gap-2 px-10">
-          <img
-            src={LeftBlackPNG}
-            className="w-8 h-8"
-            alt="prev button"
-            onClick={() => sliderRef.current.slickPrev()}
-          />
-          <img
-            src={RightBlackPNG}
-            className="w-8 h-8"
-            alt="next button"
-            onClick={() => sliderRef.current.slickNext()}
-          />
-        </div>
+        {hideArrow === true ? (
+          <></>
+        ) : (
+          <div className="flex gap-2 px-10">
+            <img
+              src={LeftBlackPNG}
+              className="w-8 h-8"
+              alt="prev button"
+              onClick={() => sliderRef.current.slickPrev()}
+            />
+            <img
+              src={RightBlackPNG}
+              className="w-8 h-8"
+              alt="next button"
+              onClick={() => sliderRef.current.slickNext()}
+            />
+          </div>
+        )}
       </div>
       <Slider {...settings} className="border-none" ref={sliderRef}>
         {items.map((item, i) => (

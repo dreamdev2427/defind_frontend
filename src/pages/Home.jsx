@@ -8,7 +8,7 @@ import img4 from "../assets/top10trending/Group 1000008184.png";
 import img5 from "../assets/top10trending/Group 1000008185.png";
 import img6 from "../assets/top10trending/Group 1000008186.png";
 
-const exampleItems = [
+export const exampleItems = [
   {
     image: img1,
     text: "Starknet",

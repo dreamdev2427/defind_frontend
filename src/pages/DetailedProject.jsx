@@ -26,7 +26,7 @@ import {
 import { useState } from "react";
 
 const DetailedProject = () => {
-  const [activeTab, setActiveTab] = useState("html");
+  const [activeTab, setActiveTab] = useState("details");
   const data = [
     {
       label: "Details",
