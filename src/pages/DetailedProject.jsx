@@ -198,6 +198,167 @@ const DetailedProject = () => {
             className="text-[#aaabb6]"
           >
             {`Orbiter Finance is designed as a decentralized cross-rollup bridge for transferring Ethereum-native assets. The system has two roles: Sender and Maker. The 'Maker' is required to deposit excess margin to Orbiter's contract before they can qualify to be a cross-rollup service provider to the 'Sender'. In the usual process, the 'Sender' sends assets to the 'Maker' on the 'Source Network', and the 'Maker' sends back to the 'Sender' on the 'Destination Network'. There are 3 types of smart contracts in Orbiter's security model. MDC: 'Maker' Deposit Contract, keep Maker’s Margin, handle the arbitration for 'Sender'. EBC: Event Binding Contract, store the margin rules and Makers’ charging standards. SPV: Simple Payment Verification. This proves the existence of the transaction in Orbiter. Orbiter's technology creates SPV for every domain supported. MDC, EBC, and all the SPVs are deployed on one domain that supports smart contracts in the Ethereum ecosystem. Learn more details by reading Technology.`}
+
+            <div className="mt-10 flex items-center justify-between">
+              <div className="mt-3 flex ">
+                <div className="flex relative">
+                  <img src={AvatarIcon} className="w-10 h-10  " alt="avatar" />
+                  <img
+                    src={AvatarIcon}
+                    className="w-10 h-10 absolute left-8 "
+                    alt="avatar"
+                  />
+                  <img
+                    src={AvatarIcon}
+                    className="w-10 h-10 absolute left-14 "
+                    alt="avatar"
+                  />
+                </div>
+
+                <div className="text-[#cecfc5] text-left ml-24 ">
+                  Followed by LL United Club, Wall Street<br></br> Baby, and 8
+                  others you follow
+                </div>
+              </div>
+              <div className="w-48 flex flex-col">
+                <div className="text-white font-bold text-lg">
+                  LIKE AND DISLIKE
+                </div>
+                <div className="flex w-full mt-2">
+                  <div className="bg-[#17C671] w-[87.0%] h-2 rounded-s-md"></div>
+                  <div className="bg-[#BC1729] w-[13.0%] h-2 rounded-e-md"></div>
+                </div>
+                <div className="flex justify-between mt-4">
+                  <div className="flex text-sm text-[#17C671] items-center">
+                    <img src={HandGreenIcon} className="w-8 h-8 mr-1" />
+                    87.0%
+                  </div>
+                  <div className="flex text-sm text-[#BC1729]  items-center">
+                    13.0%
+                    <img src={HandRedIcon} className="w-8 h-8 ml-1" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="text-lg font-bold my-10 text-white text-left">
+              Last News
+            </div>
+            <div className="flex flex-wrap w-full ">
+              <div className="flex text-white items-center mx-10 mb-10">
+                <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
+                <div className="flex flex-col items-start ml-3 ">
+                  <span className="text-sm text-[#aaabb6]">
+                    Kevin Chisholm in Flutter
+                  </span>
+                  <span>What’s new in Flutter 3.13</span>
+                  <span className="text-sm text-[#aaabb6]">
+                    Aug 17 · 12 min read
+                  </span>
+                </div>
+              </div>
+
+              <div className="flex text-white items-center mx-10 mb-10">
+                <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
+                <div className="flex flex-col items-start ml-3 ">
+                  <span className="text-sm text-[#aaabb6]">
+                    Kevin Chisholm in Flutter
+                  </span>
+                  <span>What’s new in Flutter 3.13</span>
+                  <span className="text-sm text-[#aaabb6]">
+                    Aug 17 · 12 min read
+                  </span>
+                </div>
+              </div>
+
+              <div className="flex text-white items-center mx-10 mb-10">
+                <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
+                <div className="flex flex-col items-start ml-3 ">
+                  <span className="text-sm text-[#aaabb6]">
+                    Kevin Chisholm in Flutter
+                  </span>
+                  <span>What’s new in Flutter 3.13</span>
+                  <span className="text-sm text-[#aaabb6]">
+                    Aug 17 · 12 min read
+                  </span>
+                </div>
+              </div>
+              <div className="flex text-white items-center mx-10 mb-10">
+                <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
+                <div className="flex flex-col items-start ml-3 ">
+                  <span className="text-sm text-[#aaabb6]">
+                    Kevin Chisholm in Flutter
+                  </span>
+                  <span>What’s new in Flutter 3.13</span>
+                  <span className="text-sm text-[#aaabb6]">
+                    Aug 17 · 12 min read
+                  </span>
+                </div>
+              </div>
+
+              <div className="flex text-white items-center mx-10 mb-10">
+                <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
+                <div className="flex flex-col items-start ml-3 ">
+                  <span className="text-sm text-[#aaabb6]">
+                    Kevin Chisholm in Flutter
+                  </span>
+                  <span>What’s new in Flutter 3.13</span>
+                  <span className="text-sm text-[#aaabb6]">
+                    Aug 17 · 12 min read
+                  </span>
+                </div>
+              </div>
+
+              <div className="flex text-white items-center mx-10 mb-10">
+                <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
+                <div className="flex flex-col items-start ml-3 ">
+                  <span className="text-sm text-[#aaabb6]">
+                    Kevin Chisholm in Flutter
+                  </span>
+                  <span>What’s new in Flutter 3.13</span>
+                  <span className="text-sm text-[#aaabb6]">
+                    Aug 17 · 12 min read
+                  </span>
+                </div>
+              </div>
+              <div className="flex text-white items-center mx-10 mb-10">
+                <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
+                <div className="flex flex-col items-start ml-3 ">
+                  <span className="text-sm text-[#aaabb6]">
+                    Kevin Chisholm in Flutter
+                  </span>
+                  <span>What’s new in Flutter 3.13</span>
+                  <span className="text-sm text-[#aaabb6]">
+                    Aug 17 · 12 min read
+                  </span>
+                </div>
+              </div>
+
+              <div className="flex text-white items-center mx-10 mb-10">
+                <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
+                <div className="flex flex-col items-start ml-3 ">
+                  <span className="text-sm text-[#aaabb6]">
+                    Kevin Chisholm in Flutter
+                  </span>
+                  <span>What’s new in Flutter 3.13</span>
+                  <span className="text-sm text-[#aaabb6]">
+                    Aug 17 · 12 min read
+                  </span>
+                </div>
+              </div>
+
+              <div className="flex text-white items-center mx-10 mb-10">
+                <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
+                <div className="flex flex-col items-start ml-3 ">
+                  <span className="text-sm text-[#aaabb6]">
+                    Kevin Chisholm in Flutter
+                  </span>
+                  <span>What’s new in Flutter 3.13</span>
+                  <span className="text-sm text-[#aaabb6]">
+                    Aug 17 · 12 min read
+                  </span>
+                </div>
+              </div>
+            </div>
           </TabPanel>
           <TabPanel
             key={"comments"}
@@ -387,149 +548,22 @@ const DetailedProject = () => {
                 </div>
               </div>
             </div>
+            <input
+              type="string"
+              placeholder="Type here..."
+              className="mt-10 w-full min-h-[135px] rounded-xl border-[#4C4C56] border-[1px] bg-[#1D1D25]
+              focus:border-[#4C4C56] focus:border-[1px] text-white
+              "
+            />
+            <div className="flex justify-start">
+              <PrimaryButton
+                className="w-36 h-12 rounded-3xl mt-5 text-white font-bold"
+                label={"Submit"}
+              />
+            </div>
           </TabPanel>
         </TabsBody>
       </Tabs>
-      <div className="mt-10 flex items-center justify-between">
-        <div className="mt-3 flex ">
-          <div className="flex relative">
-            <img src={AvatarIcon} className="w-10 h-10  " alt="avatar" />
-            <img
-              src={AvatarIcon}
-              className="w-10 h-10 absolute left-8 "
-              alt="avatar"
-            />
-            <img
-              src={AvatarIcon}
-              className="w-10 h-10 absolute left-14 "
-              alt="avatar"
-            />
-          </div>
-
-          <div className="text-[#cecfc5] text-left ml-24 ">
-            Followed by LL United Club, Wall Street<br></br> Baby, and 8 others
-            you follow
-          </div>
-        </div>
-        <div className="w-48 flex flex-col">
-          <div className="text-white font-bold text-lg">LIKE AND DISLIKE</div>
-          <div className="flex w-full mt-2">
-            <div className="bg-[#17C671] w-[87.0%] h-2 rounded-s-md"></div>
-            <div className="bg-[#BC1729] w-[13.0%] h-2 rounded-e-md"></div>
-          </div>
-          <div className="flex justify-between mt-4">
-            <div className="flex text-sm text-[#17C671] items-center">
-              <img src={HandGreenIcon} className="w-8 h-8 mr-1" />
-              87.0%
-            </div>
-            <div className="flex text-sm text-[#BC1729]  items-center">
-              13.0%
-              <img src={HandRedIcon} className="w-8 h-8 ml-1" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="text-lg font-bold my-10 text-white text-left">
-        Last News
-      </div>
-      <div className="flex flex-wrap w-full ">
-        <div className="flex text-white items-center mx-10 mb-10">
-          <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
-          <div className="flex flex-col items-start ml-3 ">
-            <span className="text-sm text-[#aaabb6]">
-              Kevin Chisholm in Flutter
-            </span>
-            <span>What’s new in Flutter 3.13</span>
-            <span className="text-sm text-[#aaabb6]">Aug 17 · 12 min read</span>
-          </div>
-        </div>
-
-        <div className="flex text-white items-center mx-10 mb-10">
-          <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
-          <div className="flex flex-col items-start ml-3 ">
-            <span className="text-sm text-[#aaabb6]">
-              Kevin Chisholm in Flutter
-            </span>
-            <span>What’s new in Flutter 3.13</span>
-            <span className="text-sm text-[#aaabb6]">Aug 17 · 12 min read</span>
-          </div>
-        </div>
-
-        <div className="flex text-white items-center mx-10 mb-10">
-          <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
-          <div className="flex flex-col items-start ml-3 ">
-            <span className="text-sm text-[#aaabb6]">
-              Kevin Chisholm in Flutter
-            </span>
-            <span>What’s new in Flutter 3.13</span>
-            <span className="text-sm text-[#aaabb6]">Aug 17 · 12 min read</span>
-          </div>
-        </div>
-        <div className="flex text-white items-center mx-10 mb-10">
-          <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
-          <div className="flex flex-col items-start ml-3 ">
-            <span className="text-sm text-[#aaabb6]">
-              Kevin Chisholm in Flutter
-            </span>
-            <span>What’s new in Flutter 3.13</span>
-            <span className="text-sm text-[#aaabb6]">Aug 17 · 12 min read</span>
-          </div>
-        </div>
-
-        <div className="flex text-white items-center mx-10 mb-10">
-          <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
-          <div className="flex flex-col items-start ml-3 ">
-            <span className="text-sm text-[#aaabb6]">
-              Kevin Chisholm in Flutter
-            </span>
-            <span>What’s new in Flutter 3.13</span>
-            <span className="text-sm text-[#aaabb6]">Aug 17 · 12 min read</span>
-          </div>
-        </div>
-
-        <div className="flex text-white items-center mx-10 mb-10">
-          <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
-          <div className="flex flex-col items-start ml-3 ">
-            <span className="text-sm text-[#aaabb6]">
-              Kevin Chisholm in Flutter
-            </span>
-            <span>What’s new in Flutter 3.13</span>
-            <span className="text-sm text-[#aaabb6]">Aug 17 · 12 min read</span>
-          </div>
-        </div>
-        <div className="flex text-white items-center mx-10 mb-10">
-          <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
-          <div className="flex flex-col items-start ml-3 ">
-            <span className="text-sm text-[#aaabb6]">
-              Kevin Chisholm in Flutter
-            </span>
-            <span>What’s new in Flutter 3.13</span>
-            <span className="text-sm text-[#aaabb6]">Aug 17 · 12 min read</span>
-          </div>
-        </div>
-
-        <div className="flex text-white items-center mx-10 mb-10">
-          <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
-          <div className="flex flex-col items-start ml-3 ">
-            <span className="text-sm text-[#aaabb6]">
-              Kevin Chisholm in Flutter
-            </span>
-            <span>What’s new in Flutter 3.13</span>
-            <span className="text-sm text-[#aaabb6]">Aug 17 · 12 min read</span>
-          </div>
-        </div>
-
-        <div className="flex text-white items-center mx-10 mb-10">
-          <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
-          <div className="flex flex-col items-start ml-3 ">
-            <span className="text-sm text-[#aaabb6]">
-              Kevin Chisholm in Flutter
-            </span>
-            <span>What’s new in Flutter 3.13</span>
-            <span className="text-sm text-[#aaabb6]">Aug 17 · 12 min read</span>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
