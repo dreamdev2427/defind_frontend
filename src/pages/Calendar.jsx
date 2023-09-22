@@ -8,9 +8,9 @@ const Calendar = () => {
       <div className="text-white mt-10 text-left px-10 text-lg font-bold pb-2">
         Calendar
       </div>
-      <div className="flex justify-between px-10 text-white">
+      <div className="flex justify-between px-10 text-white items-center">
         <div className="flex justify-start">
-          <span className="cursor-pointer p-3 mr-2 rounded-md ">May 29th</span>
+          <span className="cursor-pointer mr-2 rounded-md ">May 29th</span>
         </div>
         <div className="flex justify-end gap-2">
           <span className="cursor-pointer p-3 rounded-md bg-[#1D1D25] bg-gradient-to-r from-[#5BDFE4] to-[#024CAD]">
