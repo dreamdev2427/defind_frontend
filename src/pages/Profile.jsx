@@ -5,7 +5,7 @@ import {
   Tab,
   TabPanel,
 } from "@material-tailwind/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AvatarImg from "../assets/avatar2.png";
 import VerifiedBlueTick from "../assets/VerifiedBlueTick.png";
 import CopyIcon from "../assets/copy.svg";
@@ -23,11 +23,11 @@ const Profile = () => {
   const data = [
     {
       label: "My details",
-      value: "my details",
+      value: "mydetails",
     },
     {
       label: "My Crypto Projects",
-      value: "my crypto projects",
+      value: "mycryptoprojects",
     },
     {
       label: "Password",
@@ -51,12 +51,12 @@ const Profile = () => {
     },
   ];
 
-  const [activeTab, setActiveTab] = useState("my details");
+  const [activeTab, setActiveTab] = useState("mydetails");
   const [isInEditionOfProofile, setIsInEditionOfProfile] = useState(false);
   const [nftActivity, setNftActivity] = useState(false);
   const [shitcoinActivity, setShitcoinActivity] = useState(false);
   const [englishActivity, setEnglichActivity] = useState(false);
-  const [defiActivity, setDefiActivity] = useState(false);
+  const [defiActivity, setDefiActivity] = useState(true);
   const [ohmActivity, setOhmActivity] = useState(false);
   const [ethActivity, setEthActivity] = useState(false);
 
@@ -69,7 +69,7 @@ const Profile = () => {
         <TabsHeader
           className="w-56 px-6 py-6 border-[#1D1D25] border-[1px] rounded-xl bg-[#1D1D25] min-h-[70vh]  "
           indicatorProps={{
-            className: "bg-[#666875] shadow-none ",
+            className: "bg-transparent",
           }}
         >
           {data.map(({ label, value }) => (
@@ -78,7 +78,9 @@ const Profile = () => {
               value={value}
               onClick={() => setActiveTab(value)}
               className={
-                activeTab === value ? "text-white " : "text-[#aaabb6] "
+                activeTab === value
+                  ? "text-white bg-[#666875] rounded-lg"
+                  : "text-[#aaabb6] bg-transparent"
               }
             >
               {label}
@@ -87,8 +89,8 @@ const Profile = () => {
         </TabsHeader>
         <TabsBody>
           <TabPanel
-            key={"my details"}
-            value={"my details"}
+            key={"mydetails"}
+            value={"mydetails"}
             className="py-0 px-10 min-h-[100vh]"
           >
             <div className="flex justify-between pb-5 border-b-[#4C4C56] border-b-[1px]">
@@ -322,8 +324,8 @@ const Profile = () => {
             )}
           </TabPanel>
           <TabPanel
-            key={"my crypto projects"}
-            value={"my crypto projects"}
+            key={"mycryptoprojects"}
+            value={"mycryptoprojects"}
             className="py-0 px-10 min-h-[100vh]"
           >
             <div className="text-lg text-white text-left ml-10">

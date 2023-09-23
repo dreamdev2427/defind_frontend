@@ -30,7 +30,12 @@ const Header = () => {
           >
             Calendar
           </div>
-          <div className="text-white mx-2">Learn</div>
+          <div
+            className="text-white mx-2"
+            onClick={() => navigate("/training")}
+          >
+            Learn
+          </div>
           <div className="text-white mx-2">...</div>
         </div>
       </div>
