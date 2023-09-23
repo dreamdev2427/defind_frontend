@@ -2,7 +2,6 @@ import Header from "./components/Header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Signup from "./pages/SignUp";
 import Settings from "./pages/Settings";
-import ProfileEdit from "./pages/ProfileEdit";
 import Profile from "./pages/Profile";
 import Login from "./pages/Login";
 import LoginWithEmail from "./pages/LoginWithEmail";
@@ -26,7 +25,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/settings" element={<Settings />} />
-          <Route path="/profile_edit" element={<ProfileEdit />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/login" element={<Login />} />
           <Route path="/login_with_email" element={<LoginWithEmail />} />
