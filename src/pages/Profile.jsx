@@ -431,7 +431,6 @@ const Profile = () => {
                   </div>
                 </div>
               </div>
-
               <div className="pb-5 border-b-[1px] border-b-[#4C4C56] pt-5 flex w-full justify-between">
                 <div className="">
                   <div className="text-white text-left">Tags</div>
@@ -455,7 +454,6 @@ const Profile = () => {
                   </div>
                 </div>
               </div>
-
               <div className="pb-5 border-b-[1px] border-b-[#4C4C56] pt-5 flex w-full justify-between">
                 <div className="">
                   <div className="text-white text-left">Reminders</div>
@@ -479,7 +477,6 @@ const Profile = () => {
                   </div>
                 </div>
               </div>
-
               <div className="pb-5 pt-5 flex w-full justify-between">
                 <div className="">
                   <div className="text-white text-left">
