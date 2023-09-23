@@ -15,6 +15,9 @@ import ArrowUpRight from "../assets/arrow-up-right.png";
 import Editicon from "../assets/editicon.png";
 import EyeOffSVG from "../assets/eye-off.svg";
 import CopySVG from "../assets/copy.svg";
+import ProductSlider from "../components/ProductSlider/ProductSlider";
+import { exampleItems } from "./Home";
+import { Switch } from "@material-tailwind/react";
 
 const Profile = () => {
   const data = [
@@ -58,7 +61,7 @@ const Profile = () => {
       </div>
       <Tabs value="html" orientation="vertical" className="px-10 mt-8">
         <TabsHeader
-          className="w-56 px-6 py-6 border-[#4C4C56] border-[1px] rounded-xl bg-[#4C4C56] min-h-[70vh]  "
+          className="w-56 px-6 py-6 border-[#1D1D25] border-[1px] rounded-xl bg-[#1D1D25] min-h-[70vh]  "
           indicatorProps={{
             className: "bg-[#666875] shadow-none ",
           }}
@@ -80,7 +83,7 @@ const Profile = () => {
           <TabPanel
             key={"my details"}
             value={"my details"}
-            className="py-0 px-10 "
+            className="py-0 px-10 min-h-[100vh]"
           >
             <div className="flex justify-between pb-5 border-b-[#4C4C56] border-b-[1px]">
               <div className="flex justify-start ">
@@ -315,24 +318,209 @@ const Profile = () => {
           <TabPanel
             key={"my crypto projects"}
             value={"my crypto projects"}
-            className="py-0"
-          ></TabPanel>
+            className="py-0 px-10 min-h-[100vh]"
+          >
+            <div className="text-lg text-white text-left ml-10">
+              My projects
+            </div>
+
+            <ProductSlider items={exampleItems} hideArrow={true} />
+
+            <ProductSlider items={exampleItems} hideArrow={true} />
+
+            <ProductSlider items={exampleItems} hideArrow={true} />
+
+            <ProductSlider items={exampleItems} hideArrow={true} />
+          </TabPanel>
           <TabPanel
             key={"password"}
             value={"password"}
-            className="py-0"
-          ></TabPanel>
+            className="py-0 px-10 min-h-[100vh]"
+          >
+            <div className="text-lg text-white text-center ml-10">
+              Change password
+            </div>
+            <div className="w-full flex justify-center">
+              <div className="w-6/12">
+                <div className="mt-3 rounded-[16px] border-[1px] border-[#35383d] min-w-[480px] min-h-[64px] flex  px-4 justify-between">
+                  <div className="flex flex-col items-start justify-center ">
+                    <div className="text-[#aaabb6] text-sm">
+                      Current Password
+                    </div>
+                    <input
+                      placeholder="Type here..."
+                      type="password"
+                      className="text-white text-md bg-transparent border-none w-full hover:border-none focus:border-none"
+                    ></input>
+                  </div>
+                  <div className=" min-h-[64px] flex flex-col justify-center">
+                    <img src={EyeOffSVG} alt="eyeoff" className="w-6 h-6"></img>
+                  </div>
+                </div>
+                <div className="mt-3 rounded-[16px] border-[1px] border-[#35383d] min-w-[480px] min-h-[64px] flex  px-4 justify-between">
+                  <div className="flex flex-col items-start justify-center ">
+                    <div className="text-[#aaabb6] text-sm">New Password</div>
+                    <input
+                      placeholder="Type here..."
+                      type="password"
+                      className="text-white text-md bg-transparent border-none w-full hover:border-none focus:border-none"
+                    ></input>
+                  </div>
+                  <div className=" min-h-[64px] flex flex-col justify-center">
+                    <img src={EyeOffSVG} alt="eyeoff" className="w-6 h-6"></img>
+                  </div>
+                </div>
+                <div className="mt-3 rounded-[16px] border-[1px] border-[#35383d] min-w-[480px] min-h-[64px] flex  px-4 justify-between">
+                  <div className="flex flex-col items-start justify-center ">
+                    <div className="text-[#aaabb6] text-sm">
+                      Confirm New Password
+                    </div>
+                    <input
+                      placeholder="Type here..."
+                      type="password"
+                      className="text-white text-md bg-transparent border-none w-full hover:border-none focus:border-none"
+                    ></input>
+                  </div>
+                  <div className=" min-h-[64px] flex flex-col justify-center">
+                    <img src={EyeOffSVG} alt="eyeoff" className="w-6 h-6"></img>
+                  </div>
+                </div>
+                <PrimaryButton
+                  label={"Save"}
+                  className={"mt-5 w-1/2 h-12 text-white font-bold"}
+                />
+              </div>
+            </div>
+          </TabPanel>
           <TabPanel
             key={"notifications"}
             value={"notifications"}
-            className="py-0"
+            className="py-0 px-10 min-h-[100vh]"
+          >
+            <div className="text-lg text-white text-left">Notifications</div>
+            <div className="bg-[#1D1D25] rounded-2xl px-5 py-8 mt-5 w-full ">
+              <div className="pb-5 border-b-[1px] border-b-[#4C4C56]">
+                <div className="text-white text-left">
+                  Notification settings
+                </div>
+                <div className="text-[#aaabb6] text-left">
+                  We may still send you important notifications about your
+                  account outside of your notification settings.
+                </div>
+              </div>
+              <div className="pb-5 border-b-[1px] border-b-[#4C4C56] pt-5 flex w-full justify-between">
+                <div className="">
+                  <div className="text-white text-left">Comments</div>
+                  <div className="text-[#aaabb6] text-left">
+                    These are notifications for comments on your posts and
+                    replies to your comments.
+                  </div>
+                </div>
+                <div className="flex flex-col mr-5">
+                  <div className="flex">
+                    <Switch color="blue" defaultChecked />
+                    <div className="ml-10 text-white">Push</div>
+                  </div>
+                  <div className="flex">
+                    <Switch color="red" defaultChecked />
+                    <div className="ml-10 text-white">Email</div>
+                  </div>
+                  <div className="flex">
+                    <Switch color="green" defaultChecked />
+                    <div className="ml-10 text-white">SMS</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="pb-5 border-b-[1px] border-b-[#4C4C56] pt-5 flex w-full justify-between">
+                <div className="">
+                  <div className="text-white text-left">Tags</div>
+                  <div className="text-[#aaabb6] text-left">
+                    These are notifications for comments on your posts and
+                    replies to your comments.
+                  </div>
+                </div>
+                <div className="flex flex-col mr-5">
+                  <div className="flex">
+                    <Switch color="blue" defaultChecked />
+                    <div className="ml-10 text-white">Push</div>
+                  </div>
+                  <div className="flex">
+                    <Switch color="red" defaultChecked />
+                    <div className="ml-10 text-white">Email</div>
+                  </div>
+                  <div className="flex">
+                    <Switch color="green" defaultChecked />
+                    <div className="ml-10 text-white">SMS</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="pb-5 border-b-[1px] border-b-[#4C4C56] pt-5 flex w-full justify-between">
+                <div className="">
+                  <div className="text-white text-left">Reminders</div>
+                  <div className="text-[#aaabb6] text-left">
+                    These are notifications for comments on your posts and
+                    replies to your comments.
+                  </div>
+                </div>
+                <div className="flex flex-col mr-5">
+                  <div className="flex">
+                    <Switch color="blue" defaultChecked />
+                    <div className="ml-10 text-white">Push</div>
+                  </div>
+                  <div className="flex">
+                    <Switch color="red" defaultChecked />
+                    <div className="ml-10 text-white">Email</div>
+                  </div>
+                  <div className="flex">
+                    <Switch color="green" defaultChecked />
+                    <div className="ml-10 text-white">SMS</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="pb-5 pt-5 flex w-full justify-between">
+                <div className="">
+                  <div className="text-white text-left">
+                    Mare activity about you
+                  </div>
+                  <div className="text-[#aaabb6] text-left">
+                    These are notifications for comments on your posts and
+                    replies to your comments.
+                  </div>
+                </div>
+                <div className="flex flex-col mr-5">
+                  <div className="flex">
+                    <Switch color="blue" defaultChecked />
+                    <div className="ml-10 text-white">Push</div>
+                  </div>
+                  <div className="flex">
+                    <Switch color="red" defaultChecked />
+                    <div className="ml-10 text-white">Email</div>
+                  </div>
+                  <div className="flex">
+                    <Switch color="green" defaultChecked />
+                    <div className="ml-10 text-white">SMS</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </TabPanel>
+          <TabPanel
+            key={"feed"}
+            value={"feed"}
+            className="py-0 px-10 min-h-[100vh]"
           ></TabPanel>
-          <TabPanel key={"feed"} value={"feed"} className="py-0"></TabPanel>
-          <TabPanel key={"theme"} value={"theme"} className="py-0"></TabPanel>
+          <TabPanel
+            key={"theme"}
+            value={"theme"}
+            className="py-0 px-10 min-h-[100vh]"
+          ></TabPanel>
           <TabPanel
             key={"version"}
             value={"version"}
-            className="py-0"
+            className="py-0 px-10 min-h-[100vh]"
           ></TabPanel>
         </TabsBody>
       </Tabs>

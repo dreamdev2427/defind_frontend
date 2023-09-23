@@ -24,8 +24,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/settings" element={<Settings />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/settings" element={<Profile />} />
           <Route path="/login" element={<Login />} />
           <Route path="/login_with_email" element={<LoginWithEmail />} />
           <Route path="/lock_lp" element={<LockLP />} />

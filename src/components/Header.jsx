@@ -38,7 +38,7 @@ const Header = () => {
           src={AvatarPNG}
           alt="search icon"
           className="w-8 h-8 ml-2 cursor-pointer"
-          onClick={() => navigate("/profile")}
+          onClick={() => navigate("/settings")}
         />
       </div>
     </div>
