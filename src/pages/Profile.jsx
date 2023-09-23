@@ -5,7 +5,7 @@ import {
   Tab,
   TabPanel,
 } from "@material-tailwind/react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import AvatarImg from "../assets/avatar2.png";
 import VerifiedBlueTick from "../assets/VerifiedBlueTick.png";
 import CopyIcon from "../assets/copy.svg";
@@ -69,7 +69,7 @@ const Profile = () => {
         <TabsHeader
           className="w-56 px-6 py-6 border-[#1D1D25] border-[1px] rounded-xl bg-[#1D1D25] min-h-[70vh]  "
           indicatorProps={{
-            className: "bg-transparent",
+            className: "bg-transparent ",
           }}
         >
           {data.map(({ label, value }) => (
@@ -79,7 +79,7 @@ const Profile = () => {
               onClick={() => setActiveTab(value)}
               className={
                 activeTab === value
-                  ? "text-white bg-[#666875] rounded-lg"
+                  ? "text-white bg-[#666875] rounded-lg "
                   : "text-[#aaabb6] bg-transparent"
               }
             >
