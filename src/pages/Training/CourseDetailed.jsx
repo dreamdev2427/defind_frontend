@@ -12,7 +12,7 @@ const CourseDetailed = () => {
           Formation 1: Blockchain Deep Dive
         </div>
         <div className="mt-5 flex flex-col md:flex-row justify-between ">
-          <div className="">
+          <div className="flex justify-center">
             <img
               src={CourseBanner}
               className="max-w-[700px] h-[564px] object-cover"
