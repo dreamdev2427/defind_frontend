@@ -8,7 +8,6 @@ import LoginWithEmail from "./pages/LoginWithEmail";
 import LockLP from "./pages/LockLP";
 import Home from "./pages/Home";
 import Favorite from "./pages/Favorite";
-import FAQ from "./pages/FAQ";
 import DetailedProject from "./pages/DetailedProject";
 import Calendar from "./pages/Calendar";
 import Training from "./pages/Training";
@@ -29,7 +28,6 @@ function App() {
           <Route path="/login_with_email" element={<LoginWithEmail />} />
           <Route path="/lock_lp" element={<LockLP />} />
           <Route path="/favorite" element={<Favorite />} />
-          <Route path="/faq" element={<FAQ />} />
           <Route path="/detailed_project" element={<DetailedProject />} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/training" element={<Training />} />

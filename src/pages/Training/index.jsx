@@ -11,7 +11,7 @@ import VideoMarkIcon from "../../assets/videoMarkIcon.png";
 
 const TrainingHome = () => {
   return (
-    <div className="w-full overflow-x-hidden flex flex-col items-center">
+    <div className="w-full overflow-y-hidden overflow-x-hidden flex flex-col items-center">
       <div
         className="bg-[url('assets/training_banner.png')]
             flex flex-col  items-center  w-[100vw] h-[30vh] 
@@ -33,7 +33,7 @@ const TrainingHome = () => {
         </div>
       </div>
       <div className="container overflow-x-hidden">
-        <div className="mt-10 mx-10 flex pb-5 border-b-[#35383D] border-b-[1px] ">
+        <div className="mt-10 flex pb-5 border-b-[#35383D] border-b-[1px] ">
           <PrimaryButton
             className={"w-36 h-10 rounded-lg text-white"}
             label={"All courses"}
@@ -45,10 +45,10 @@ const TrainingHome = () => {
             Completed
           </button>
         </div>
-        <div className="mt-8 text-3xl text-white font-bold text-left px-10">
+        <div className="mt-8 text-3xl text-white font-bold text-left ">
           Intermediate Track 5 Courses
         </div>
-        <div className=" w-[1290px] h-[297px] mt-8 mx-10 rounded-2xl bg-[#1D1D25] flex justify-between relative">
+        <div className="  h-[297px] mt-8 rounded-2xl bg-[#1D1D25] flex justify-between relative">
           <div className="px-10 py-5">
             <div className="text-white text-xl font-bold text-left py-4">
               Blockchain Beyond Basics
@@ -89,7 +89,7 @@ const TrainingHome = () => {
             alt="training"
           />
         </div>
-        <div className="mt-[80px]  w-[1290px]  mx-10  pl-5 pr-[8px]  min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
+        <div className="mt-[80px]   pl-5 pr-[8px]  min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
           <div className="text-white">Blockchain Deep Dive</div>
           <div className="text-white flex ">
             <img src={WatchIcon} alt="watch icon" className="w-6 h-6 mr-2" /> 77
@@ -100,7 +100,7 @@ const TrainingHome = () => {
             label={"Apply"}
           />
         </div>
-        <div className="mt-3  w-[1290px]  mx-10 pl-5 pr-[8px] min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
+        <div className="mt-3    pl-5 pr-[8px] min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
           <div className="text-white">Blockchain Deep Dive</div>
           <div className="text-white flex ">
             <img src={WatchIcon} alt="watch icon" className="w-6 h-6 mr-2" /> 77
@@ -111,7 +111,7 @@ const TrainingHome = () => {
             label={"Apply"}
           />
         </div>
-        <div className="mt-3 w-[1290px]  mx-10 pl-5 pr-[8px] min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
+        <div className="mt-3   pl-5 pr-[8px] min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
           <div className="text-white">Blockchain Deep Dive</div>
           <div className="text-white flex ">
             <img src={WatchIcon} alt="watch icon" className="w-6 h-6 mr-2" /> 77
@@ -122,7 +122,7 @@ const TrainingHome = () => {
             label={"Apply"}
           />
         </div>
-        <div className="mt-3 w-[1290px]  mx-10 pl-5 pr-[8px]  min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
+        <div className="mt-3   pl-5 pr-[8px]  min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
           <div className="text-white">Blockchain Deep Dive</div>
           <div className="text-white flex ">
             <img src={WatchIcon} alt="watch icon" className="w-6 h-6 mr-2" /> 77
@@ -133,7 +133,7 @@ const TrainingHome = () => {
             label={"Apply"}
           />
         </div>
-        <div className="mt-3 w-[1290px]  mx-10 pl-5 pr-[8px] min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
+        <div className="mt-3    pl-5 pr-[8px] min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
           <div className="text-white">Blockchain Deep Dive</div>
           <div className="text-white flex ">
             <img src={WatchIcon} alt="watch icon" className="w-6 h-6 mr-2" /> 77
@@ -145,10 +145,10 @@ const TrainingHome = () => {
           />
         </div>
 
-        <div className="mt-[80px] text-3xl text-white font-bold text-left px-10">
+        <div className="mt-[80px] text-3xl text-white font-bold text-left ">
           Beginner Track 5 Courses
         </div>
-        <div className=" w-[1290px] h-[297px] mt-8 mx-10 rounded-2xl bg-[#1D1D25] flex justify-between relative">
+        <div className="  h-[297px] mt-8  rounded-2xl bg-[#1D1D25] flex justify-between relative">
           <div className="px-10 py-5">
             <div className="text-white text-xl font-bold text-left py-4">
               Blockchain Beyond Basics
@@ -189,7 +189,7 @@ const TrainingHome = () => {
             alt="training"
           />
         </div>
-        <div className="mt-[80px]  w-[1290px]  mx-10  pl-5 pr-[8px]  min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
+        <div className="mt-[80px]      pl-5 pr-[8px]  min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
           <div className="text-white">Blockchain Deep Dive</div>
           <div className="text-white flex ">
             <img src={WatchIcon} alt="watch icon" className="w-6 h-6 mr-2" /> 77
@@ -200,7 +200,7 @@ const TrainingHome = () => {
             label={"Apply"}
           />
         </div>
-        <div className="mt-3  w-[1290px]  mx-10 pl-5 pr-[8px] min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
+        <div className="mt-3     pl-5 pr-[8px] min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
           <div className="text-white">Blockchain Deep Dive</div>
           <div className="text-white flex ">
             <img src={WatchIcon} alt="watch icon" className="w-6 h-6 mr-2" /> 77
@@ -211,7 +211,7 @@ const TrainingHome = () => {
             label={"Apply"}
           />
         </div>
-        <div className="mt-3 w-[1290px]  mx-10 pl-5 pr-[8px] min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
+        <div className="mt-3    pl-5 pr-[8px] min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
           <div className="text-white">Blockchain Deep Dive</div>
           <div className="text-white flex ">
             <img src={WatchIcon} alt="watch icon" className="w-6 h-6 mr-2" /> 77
@@ -222,7 +222,7 @@ const TrainingHome = () => {
             label={"Apply"}
           />
         </div>
-        <div className="mt-3 w-[1290px]  mx-10 pl-5 pr-[8px]  min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
+        <div className="mt-3    pl-5 pr-[8px]  min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
           <div className="text-white">Blockchain Deep Dive</div>
           <div className="text-white flex ">
             <img src={WatchIcon} alt="watch icon" className="w-6 h-6 mr-2" /> 77
@@ -233,7 +233,7 @@ const TrainingHome = () => {
             label={"Apply"}
           />
         </div>
-        <div className="mt-3 w-[1290px]  mx-10 pl-5 pr-[8px] min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
+        <div className="mt-3    pl-5 pr-[8px] min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
           <div className="text-white">Blockchain Deep Dive</div>
           <div className="text-white flex ">
             <img src={WatchIcon} alt="watch icon" className="w-6 h-6 mr-2" /> 77
@@ -245,8 +245,8 @@ const TrainingHome = () => {
           />
         </div>
       </div>
-      <div className="  overflow-y-hidden mt-[100px] w-full flex justify-center items-center bg-[#1D1D25] h-[570px]">
-        <div className="container flex justify-center items-center">
+      <div className="  overflow-x-hidden mt-[100px] w-full flex justify-center items-center bg-[#1D1D25] h-[570px]">
+        <div className=" overflow-x-hidden container flex justify-center items-center">
           <div className="flex flex-col items-start">
             <div className="text-white text-4xl text-left font-bold w-[348px]">
               Learn crypto and earn rewards
