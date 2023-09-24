@@ -49,7 +49,7 @@ const ProductSlider = ({ title, items, hideArrow }) => {
   const sliderRef = useRef();
 
   return (
-    <section className="bg-transparent w-full shadow overflow-hidden">
+    <section className="mt-5 bg-transparent w-full shadow overflow-hidden">
       <div className="flex justify-between items-center">
         <div className=" px-6 ">
           <h1 className="text-xl font-medium text-white">{title}</h1>
@@ -57,7 +57,7 @@ const ProductSlider = ({ title, items, hideArrow }) => {
         {hideArrow === true ? (
           <></>
         ) : (
-          <div className="flex gap-2 px-10">
+          <div className="flex gap-2 px-6">
             <img
               src={LeftBlackPNG}
               className="w-8 h-8"
@@ -78,12 +78,12 @@ const ProductSlider = ({ title, items, hideArrow }) => {
           <Link
             key={i}
             to="/detailed_project"
-            className="flex flex-col items-center gap-1.5 p-6 cursor-pointer"
+            className="flex flex-col items-center gap-1.5 py-3 cursor-pointer"
           >
-            <div className="min-w-36 min-h-36 transform hover:scale-110 transition-transform duration-150 ease-out relative">
+            <div className="w-[216px] h-[150px] transform hover:scale-110 transition-transform duration-150 ease-out relative">
               <img
                 draggable="false"
-                className="object-cover w-full h-full"
+                className="object-cover w-full h-full rounded-xl "
                 src={item.image}
                 alt={item.text}
               />
