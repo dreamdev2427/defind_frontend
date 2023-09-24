@@ -8,6 +8,7 @@ import WatchIcon from "../../assets/watchicon.png";
 import FreeMarkIcon from "../../assets/freeMarkicon.png";
 import ReceiveMarkIcon from "../../assets/ReceiveMarkIcon.png";
 import VideoMarkIcon from "../../assets/videoMarkIcon.png";
+import PageFAQ from "../FaqPage/FAQ";
 
 const TrainingHome = () => {
   return (
@@ -320,6 +321,7 @@ const TrainingHome = () => {
         <div className="text-white text-4xl text-semibold text-center">
           Frequently<br></br> Asked questions
         </div>
+        <PageFAQ></PageFAQ>
       </div>
     </div>
   );
