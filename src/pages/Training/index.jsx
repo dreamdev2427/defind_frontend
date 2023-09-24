@@ -8,13 +8,15 @@ import WatchIcon from "../../assets/watchicon.png";
 import FreeMarkIcon from "../../assets/freeMarkicon.png";
 import ReceiveMarkIcon from "../../assets/ReceiveMarkIcon.png";
 import VideoMarkIcon from "../../assets/videoMarkIcon.png";
+import MailboxImage from "../../assets/mailbox.png";
 import PageFAQ from "../FaqPage/FAQ";
 
 const TrainingHome = () => {
   return (
     <div className="w-full overflow-y-hidden overflow-x-hidden flex flex-col items-center">
       <div
-        className="bg-[url('assets/training_banner.png')]
+        className="mt-3
+        bg-[url('assets/training_banner.png')]
             flex flex-col  items-center  w-[100vw] h-[30vh] 
             justify-start 
             md:flex-row
@@ -323,6 +325,36 @@ const TrainingHome = () => {
         </div>
         <PageFAQ></PageFAQ>
       </div>
+      <div className="  overflow-x-hidden mt-[30px] w-full flex justify-center items-center bg-[#1D1D25] h-[350px]">
+        <div className="flex flex-col">
+          <div className="text-white font-semibold text-4xl text-left">
+            No noise, Just Signal.
+          </div>
+          <div className="mt-4 text-white text-xl text-left">
+            Get the latest in crypto dropped to email, every week.
+          </div>
+          <div className="mt-4 flex ">
+            <input
+              className="w-[336px] h-[48px] bg-[#aaabb6] text-[#0E0E16] rounded-xl px-3"
+              placeholder="Enter your email"
+            ></input>
+            <PrimaryButton
+              className={
+                "ml-2 text-lg font-semibold w-[122px] h-[48px] rounded-xl text-white"
+              }
+              label={"Subscribe"}
+            />
+          </div>
+        </div>
+        <div className="flex flex-col">
+          <img
+            src={MailboxImage}
+            className="w-[375px] h-[306px] ml-40"
+            alt="mail box"
+          />
+        </div>
+      </div>
+      <div className="w-full h-[100px]"></div>
     </div>
   );
 };
