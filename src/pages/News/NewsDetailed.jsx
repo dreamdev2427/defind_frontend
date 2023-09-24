@@ -1,4 +1,7 @@
 import Secnewbanner from "../../assets/secnewsbanner.png";
+import TwitterIcon from "../../assets/icon-twitter-fill.png";
+import TelegramIcon from "../../assets/icon-telegram-fill.png";
+import NotificationIcon from "../../assets/icon-notification-fill.png";
 
 const NewsDetails = () => {
   return (
@@ -28,7 +31,25 @@ const NewsDetails = () => {
               </div>
               <div className="flex justify-end">
                 <div className="text-white text-sm">Share:</div>
-                <div className="ml-4 flex gap-3"></div>
+                <div className="ml-4 flex gap-3">
+                  <img
+                    src={TwitterIcon}
+                    className="w-[17px] h-[17px]"
+                    alt="twitter icon"
+                  />
+
+                  <img
+                    src={TelegramIcon}
+                    className="w-[17px] h-[17px]"
+                    alt="twitter icon"
+                  />
+
+                  <img
+                    src={NotificationIcon}
+                    className="w-[17px] h-[17px]"
+                    alt="twitter icon"
+                  />
+                </div>
               </div>
             </div>
           </div>
