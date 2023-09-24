@@ -10,24 +10,24 @@ const Favorite = () => {
         </div>
         <div className="flex justify-between  text-white">
           <div className="flex justify-start">
-            <div className="cursor-pointer h-[40px] p-3 flex cursor-pointer h-[40px] p-3 flex items-center justify-center   rounded-md bg-gradient-to-r from-[#5BDFE4] to-[#024CAD]">
+            <div className="h-[40px] p-3 flex items-center justify-center   rounded-md bg-gradient-to-r from-[#5BDFE4] to-[#024CAD]">
               All
             </div>
-            <div className="cursor-pointer h-[40px] p-3 flex cursor-pointer h-[40px] p-3 flex items-center justify-center   rounded-md bg-[#1D1D25] ml-2">
+            <div className="h-[40px] p-3 flex items-center justify-center   rounded-md bg-[#1D1D25] ml-2">
               Memecoins
             </div>
-            <div className="cursor-pointer h-[40px] p-3 flex cursor-pointer h-[40px] p-3 flex items-center justify-center   rounded-md bg-[#1D1D25] ml-2">
+            <div className="h-[40px] p-3 flex items-center justify-center   rounded-md bg-[#1D1D25] ml-2">
               DeFi
             </div>
-            <div className="cursor-pointer h-[40px] p-3 flex cursor-pointer h-[40px] p-3 flex items-center justify-center   rounded-md bg-[#1D1D25] ml-2">
+            <div className="h-[40px] p-3 flex items-center justify-center   rounded-md bg-[#1D1D25] ml-2">
               Airdrop
             </div>
-            <div className="cursor-pointer h-[40px] p-3 flex cursor-pointer h-[40px] p-3 flex items-center justify-center   rounded-md bg-[#1D1D25] ml-2">
+            <div className="h-[40px] p-3 flex items-center justify-center   rounded-md bg-[#1D1D25] ml-2">
               Play2Earn
             </div>
           </div>
           <div className="flex justify-end">
-            <span className="cursor-pointer h-[40px] p-3 flex cursor-pointer h-[40px] p-3 flex items-center justify-center   rounded-md bg-[#1D1D25]">
+            <span className="h-[40px] p-3 flex items-center justify-center   rounded-md bg-[#1D1D25]">
               Delete
             </span>
           </div>
