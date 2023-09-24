@@ -10,8 +10,11 @@ import ReceiveMarkIcon from "../../assets/ReceiveMarkIcon.png";
 import VideoMarkIcon from "../../assets/videoMarkIcon.png";
 import MailboxImage from "../../assets/mailbox.png";
 import PageFAQ from "../FaqPage/FAQ";
+import { useNavigate } from "react-router-dom";
 
 const TrainingHome = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="w-full overflow-y-hidden overflow-x-hidden flex flex-col items-center">
       <div
@@ -101,6 +104,7 @@ const TrainingHome = () => {
           <PrimaryButton
             className={"text-white rounded-lg min-w-[120px] min-h-[56px]"}
             label={"Apply"}
+            onClick={() => navigate("/detailed_course")}
           />
         </div>
         <div className="mt-3    pl-5 pr-[8px] min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
@@ -112,6 +116,7 @@ const TrainingHome = () => {
           <PrimaryButton
             className={"text-white rounded-lg min-w-[120px]  min-h-[56px]"}
             label={"Apply"}
+            onClick={() => navigate("/detailed_course")}
           />
         </div>
         <div className="mt-3   pl-5 pr-[8px] min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
@@ -123,6 +128,7 @@ const TrainingHome = () => {
           <PrimaryButton
             className={"text-white rounded-lg min-w-[120px] min-h-[56px]"}
             label={"Apply"}
+            onClick={() => navigate("/detailed_course")}
           />
         </div>
         <div className="mt-3   pl-5 pr-[8px]  min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
@@ -134,6 +140,7 @@ const TrainingHome = () => {
           <PrimaryButton
             className={"text-white rounded-lg min-w-[120px] min-h-[56px]"}
             label={"Apply"}
+            onClick={() => navigate("/detailed_course")}
           />
         </div>
         <div className="mt-3    pl-5 pr-[8px] min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
@@ -145,6 +152,7 @@ const TrainingHome = () => {
           <PrimaryButton
             className={"text-white rounded-lg min-w-[120px] min-h-[56px]"}
             label={"Apply"}
+            onClick={() => navigate("/detailed_course")}
           />
         </div>
 
@@ -201,6 +209,7 @@ const TrainingHome = () => {
           <PrimaryButton
             className={"text-white rounded-lg min-w-[120px] min-h-[56px]"}
             label={"Apply"}
+            onClick={() => navigate("/detailed_course")}
           />
         </div>
         <div className="mt-3     pl-5 pr-[8px] min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
@@ -212,6 +221,7 @@ const TrainingHome = () => {
           <PrimaryButton
             className={"text-white rounded-lg min-w-[120px]  min-h-[56px]"}
             label={"Apply"}
+            onClick={() => navigate("/detailed_course")}
           />
         </div>
         <div className="mt-3    pl-5 pr-[8px] min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
@@ -223,6 +233,7 @@ const TrainingHome = () => {
           <PrimaryButton
             className={"text-white rounded-lg min-w-[120px] min-h-[56px]"}
             label={"Apply"}
+            onClick={() => navigate("/detailed_course")}
           />
         </div>
         <div className="mt-3    pl-5 pr-[8px]  min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
@@ -234,6 +245,7 @@ const TrainingHome = () => {
           <PrimaryButton
             className={"text-white rounded-lg min-w-[120px] min-h-[56px]"}
             label={"Apply"}
+            onClick={() => navigate("/detailed_course")}
           />
         </div>
         <div className="mt-3    pl-5 pr-[8px] min-h-[72px] bg-[#1d1d25] rounded-xl flex justify-between items-center">
@@ -245,6 +257,7 @@ const TrainingHome = () => {
           <PrimaryButton
             className={"text-white rounded-lg min-w-[120px] min-h-[56px]"}
             label={"Apply"}
+            onClick={() => navigate("/detailed_course")}
           />
         </div>
       </div>

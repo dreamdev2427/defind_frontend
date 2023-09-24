@@ -1,7 +1,6 @@
 import Header from "./components/Header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Signup from "./pages/SignUp";
-import Settings from "./pages/Settings";
 import Profile from "./pages/Profile";
 import Login from "./pages/Login";
 import LoginWithEmail from "./pages/LoginWithEmail";
@@ -11,7 +10,8 @@ import Favorite from "./pages/Favorite";
 import DetailedProject from "./pages/DetailedProject";
 import Calendar from "./pages/Calendar";
 import Training from "./pages/Training";
-import News from "./pages/Training";
+import News from "./pages/News";
+import CourseDetailed from "./pages/Training/CourseDetailed";
 
 import "./App.css";
 
@@ -31,6 +31,7 @@ function App() {
           <Route path="/detailed_project" element={<DetailedProject />} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/training" element={<Training />} />
+          <Route path="/detailed_course" element={<CourseDetailed />} />
           <Route path="/news" element={<News />} />
         </Routes>
       </BrowserRouter>
