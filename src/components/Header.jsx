@@ -11,7 +11,7 @@ const Header = () => {
   const [showNotificationDlg, setShowNotificationDlg] = useState(false);
 
   return (
-    <div className="w-full flex justify-center py-5 ">
+    <div className="w-full flex justify-center py-8 ">
       <div className="container flex justify-between">
         <div className="flex justify-start">
           <img src={LogoSVG} className="w-23 h-5" alt="logo" />
@@ -37,7 +37,9 @@ const Header = () => {
             >
               Learn
             </div>
-            <div className="text-white mx-2">...</div>
+            <div className="text-white mx-2" onClick={() => navigate("/news")}>
+              ...
+            </div>
           </div>
         </div>
         <div className="flex justify-end">

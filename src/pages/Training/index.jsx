@@ -16,9 +16,9 @@ const TrainingHome = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="w-full overflow-y-hidden overflow-x-hidden flex flex-col items-center">
+    <div className="w-full min-h-[100vh] overflow-y-hidden overflow-x-hidden flex flex-col items-center">
       <div
-        className="mt-3
+        className="
         bg-[url('assets/training_banner.png')]
             flex flex-col  items-center  w-[100vw] h-[30vh] 
             justify-start 
