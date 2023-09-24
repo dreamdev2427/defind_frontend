@@ -12,6 +12,7 @@ import Calendar from "./pages/Calendar";
 import Training from "./pages/Training";
 import News from "./pages/News";
 import CourseDetailed from "./pages/Training/CourseDetailed";
+import NewsDetailed from "./pages/News/NewsDetailed";
 
 import "./App.css";
 
@@ -33,6 +34,7 @@ function App() {
           <Route path="/training" element={<Training />} />
           <Route path="/detailed_course" element={<CourseDetailed />} />
           <Route path="/news" element={<News />} />
+          <Route path="/detailed_news" element={<NewsDetailed />} />
         </Routes>
       </BrowserRouter>
     </div>

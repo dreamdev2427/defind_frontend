@@ -2,8 +2,11 @@ import IstanbulBanner from "../../assets/istanbulnewsbanner.png";
 import SecBanner from "../../assets/secnewsbanner.png";
 import OnlyfansBanner from "../../assets/onlyfansnewsbanner.png";
 import PrimaryButton from "../../components/PrimaryButton";
+import { useNavigate } from "react-router-dom";
 
 const NewsHome = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="w-full min-h-[100vh] overflow-y-hidden overflow-x-hidden flex flex-col items-center">
       <div
@@ -68,6 +71,7 @@ const NewsHome = () => {
             className="flex flex-col items-start w-[420px] mt-10 
                   transform hover:scale-105 transition-transform duration-150 ease-out 
           "
+            onClick={() => navigate("/detailed_news")}
           >
             <img
               src={IstanbulBanner}
@@ -101,6 +105,7 @@ const NewsHome = () => {
             className="flex flex-col items-start w-[420px] mt-10 
                   transform hover:scale-105 transition-transform duration-150 ease-out 
           "
+            onClick={() => navigate("/detailed_news")}
           >
             <img
               src={SecBanner}
@@ -134,6 +139,7 @@ const NewsHome = () => {
             className="flex flex-col items-start w-[420px] mt-10 
                   transform hover:scale-105 transition-transform duration-150 ease-out 
           "
+            onClick={() => navigate("/detailed_news")}
           >
             <img
               src={OnlyfansBanner}
@@ -162,10 +168,12 @@ const NewsHome = () => {
               August15, 2021 . 7 ago . 2m
             </div>
           </div>
+
           <div
             className="flex flex-col items-start w-[420px] mt-10 
                   transform hover:scale-105 transition-transform duration-150 ease-out 
           "
+            onClick={() => navigate("/detailed_news")}
           >
             <img
               src={IstanbulBanner}
@@ -199,6 +207,7 @@ const NewsHome = () => {
             className="flex flex-col items-start w-[420px] mt-10 
                   transform hover:scale-105 transition-transform duration-150 ease-out 
           "
+            onClick={() => navigate("/detailed_news")}
           >
             <img
               src={SecBanner}
@@ -232,6 +241,7 @@ const NewsHome = () => {
             className="flex flex-col items-start w-[420px] mt-10 
                   transform hover:scale-105 transition-transform duration-150 ease-out 
           "
+            onClick={() => navigate("/detailed_news")}
           >
             <img
               src={OnlyfansBanner}
