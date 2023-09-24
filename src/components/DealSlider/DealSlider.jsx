@@ -17,7 +17,7 @@ import "./DealSlider.css";
 const PreviousBtn = ({ className, onClick }) => {
   return (
     <div className={className} onClick={onClick}>
-      <img src={LeftBluePNG} alt="left arrorw" className="w-8 h-8" />
+      <img src={LeftBluePNG} alt="left arrorw" className="w-8 h-8 " />
     </div>
   );
 };
@@ -25,7 +25,7 @@ const PreviousBtn = ({ className, onClick }) => {
 const NextBtn = ({ className, onClick }) => {
   return (
     <div className={className} onClick={onClick}>
-      <img src={RightBluePNG} alt="right arrorw" className="w-8 h-8" />
+      <img src={RightBluePNG} alt="right arrorw" className="w-8 h-8 " />
     </div>
   );
 };
@@ -67,46 +67,41 @@ export const settings = {
 
 const DealSlider = ({ title }) => {
   return (
-    <section className="bg-transparent w-full px-10 shadow overflow-hidden">
-      <div className="flex px-6 py-3 justify-between items-center">
-        <h1 className="text-xl font-medium">{title}</h1>
-      </div>
-      <hr />
-
-      <Slider {...settings} className="border-none">
+    <section className="bg-transparent w-full shadow overflow-hidden">
+      <Slider {...settings} className="border-none w-full px-4">
         <img
           src={img1}
-          className="rounded-[16px] border-none px-2"
+          className="rounded-[16px] border-none w-[433px] h-[247px]"
           alt="featured image"
         />
 
         <img
           src={img2}
-          className="rounded-[16px] border-none px-2 "
+          className="rounded-[16px] border-none w-[433px] h-[247px] px-2"
           alt="featured image"
         />
 
         <img
           src={img3}
-          className="rounded-[16px] border-none px-2 "
+          className="rounded-[16px] border-none w-[433px] h-[247px] px-2"
           alt="featured image"
         />
 
         <img
           src={img1}
-          className="rounded-[16px] border-none px-2 "
+          className="rounded-[16px] border-none w-[433px] h-[247px] px-2"
           alt="featured image"
         />
 
         <img
           src={img2}
-          className="rounded-[16px] border-none px-2 "
+          className="rounded-[16px] border-none w-[433px] h-[247px] px-2"
           alt="featured image"
         />
 
         <img
           src={img3}
-          className="rounded-[16px] border-none px-2 "
+          className="rounded-[16px] border-none w-[433px] h-[247px] px-2"
           alt="featured image"
         />
       </Slider>

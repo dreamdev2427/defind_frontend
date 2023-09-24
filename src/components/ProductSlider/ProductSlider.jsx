@@ -49,9 +49,9 @@ const ProductSlider = ({ title, items, hideArrow }) => {
   const sliderRef = useRef();
 
   return (
-    <section className="bg-transparent w-full px-10 shadow overflow-hidden">
+    <section className="bg-transparent w-full shadow overflow-hidden">
       <div className="flex justify-between items-center">
-        <div className=" px-6 py-3 ">
+        <div className=" px-6 ">
           <h1 className="text-xl font-medium text-white">{title}</h1>
         </div>
         {hideArrow === true ? (

@@ -73,16 +73,20 @@ export const exampleItems = [
 
 const Home = () => {
   return (
-    <div className="w-full h-full min-h-[100vh] ">
-      <div className="text-white mt-8 mb-2 ml-10 text-left">Featured</div>
+    <div className="w-full h-full min-h-[100vh] flex flex-col items-center ">
+      <div className="container">
+        <div className="text-white mb-2 text-left text-2xl font-semibold ">
+          Featured
+        </div>
 
-      <DealSlider />
+        <DealSlider />
 
-      <ProductSlider title="Top 10 Trending" items={exampleItems} />
+        <ProductSlider title="Top 10 Trending" items={exampleItems} />
 
-      <ProductSlider title="Most Expected" items={exampleItems} />
+        <ProductSlider title="Most Expected" items={exampleItems} />
 
-      <ProductSlider title="Popular On Defined" items={exampleItems} />
+        <ProductSlider title="Popular On Defined" items={exampleItems} />
+      </div>
     </div>
   );
 };
