@@ -152,6 +152,39 @@ const CourseDetailed = () => {
             </div>
           </div>
         </div>
+        <div className="mt-10 flex flex-col max-w-[640px]">
+          <div className="text-white text-2xl font-semibold text-left">
+            Module : Introduction to blockchain technology
+          </div>
+          <div className="my-5 text-[#aaabb6] text-left">
+            This module will give you a high-level overview of blockchain
+            technology. You will learn what distributed ledger technology is,
+            what a block is, how hashing works, and how blocks are connected.
+          </div>
+          <div className="text-[#aaabb6] text-left">
+            This module will give you a high-level overview of blockchain
+            technology. You will learn what distributed ledger technology is,
+            what a block is, how hashing works.
+          </div>
+        </div>
+        <div className="mt-10 flex flex-col max-w-[640px]">
+          <div className="text-white text-2xl font-semibold text-left">
+            Lectures supplémentaires
+          </div>
+          <div className="mt-5 text-[#5BDFE4] text-left underline">
+            What Is Blockchain Technology? The Ultimate Guide
+          </div>
+          <div className="mt-5 text-[#5BDFE4] text-left underline">
+            What is Hashing?
+          </div>
+          <div className="mt-5 text-[#5BDFE4] text-left underline">
+            Blockchain Advantages and Disadvantages
+          </div>
+          <div className="mt-5 text-[#5BDFE4] text-left underline">
+            What Makes a Blockchain Secure?
+          </div>
+        </div>
+        <div className="w-full h-[100px]"></div>
       </div>
     </div>
   );
