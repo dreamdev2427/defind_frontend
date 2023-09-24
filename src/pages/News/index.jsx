@@ -64,10 +64,14 @@ const NewsHome = () => {
           </div>
         </div>
         <div className="flex flex-wrap justify-between">
-          <div className="flex flex-col items-start w-[420px] mt-10">
+          <div
+            className="flex flex-col items-start w-[420px] mt-10 
+                  transform hover:scale-105 transition-transform duration-150 ease-out 
+          "
+          >
             <img
               src={IstanbulBanner}
-              className="w-full h-[220px]"
+              className="w-full h-[220px] "
               alt="news banner"
             />
             <div className="mt-3 text-[#5BDFE4] text-md font-medium text-left">
@@ -93,7 +97,11 @@ const NewsHome = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-start w-[420px] mt-10">
+          <div
+            className="flex flex-col items-start w-[420px] mt-10 
+                  transform hover:scale-105 transition-transform duration-150 ease-out 
+          "
+          >
             <img
               src={SecBanner}
               className="w-full h-[220px]"
@@ -122,7 +130,11 @@ const NewsHome = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-start w-[420px] mt-10">
+          <div
+            className="flex flex-col items-start w-[420px] mt-10 
+                  transform hover:scale-105 transition-transform duration-150 ease-out 
+          "
+          >
             <img
               src={OnlyfansBanner}
               className="w-full h-[220px]"
@@ -150,7 +162,11 @@ const NewsHome = () => {
               August15, 2021 . 7 ago . 2m
             </div>
           </div>
-          <div className="flex flex-col items-start w-[420px] mt-10">
+          <div
+            className="flex flex-col items-start w-[420px] mt-10 
+                  transform hover:scale-105 transition-transform duration-150 ease-out 
+          "
+          >
             <img
               src={IstanbulBanner}
               className="w-full h-[220px]"
@@ -179,7 +195,11 @@ const NewsHome = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-start w-[420px] mt-10">
+          <div
+            className="flex flex-col items-start w-[420px] mt-10 
+                  transform hover:scale-105 transition-transform duration-150 ease-out 
+          "
+          >
             <img
               src={SecBanner}
               className="w-full h-[220px]"
@@ -208,7 +228,11 @@ const NewsHome = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-start w-[420px] mt-10">
+          <div
+            className="flex flex-col items-start w-[420px] mt-10 
+                  transform hover:scale-105 transition-transform duration-150 ease-out 
+          "
+          >
             <img
               src={OnlyfansBanner}
               className="w-full h-[220px]"
