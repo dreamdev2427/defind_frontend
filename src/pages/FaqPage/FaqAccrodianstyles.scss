@@ -3,6 +3,7 @@
   border-style: solid;
   border-width: 2px 2px 2px 2px;
   border-color: #e700ff;
+  color: #fff;
 }
 
 .section-faq__inner {
@@ -14,6 +15,7 @@
   text-align: center;
   font-style: italic;
   padding: 50px;
+  color: #fff;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -25,6 +27,7 @@
     font-size: 2em;
     text-align: center;
     font-style: italic;
+    color: #fff;
   }
 }
 
@@ -36,6 +39,7 @@
   -ms-user-select: none;
   user-select: none;
   font-size: 18px;
+  color: #fff;
 }
 
 .accordion {
@@ -47,40 +51,26 @@
   outline: none;
   transition: 0.4s;
   line-height: 34px;
-  color: #000;
+  color: #fff;
   padding: 20px 0;
-  background: #e4eee6;
+  background: #27272f;
   border-radius: 10px;
+}
+
+.accordion.active {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .accordion__title {
   font-weight: bold;
   padding: 20px 0;
-  color: #000;
+  color: #fff;
   font-weight: 700;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-.accordion::after {
-  position: absolute;
-  right: 0;
-  top: 25px;
-  display: block;
-  content: " ";
-  background-image: #000;
-  background-size: cover;
-  height: 15px;
-  width: 15px;
-  margin: 4px;
-  transform: rotate(0deg);
-  transition: all 0.3s;
-}
-
-.accordion.active::after {
-  transform: rotate(90deg);
 }
 
 @keyframes opening {
@@ -106,17 +96,20 @@
 
 .accordion + .panel {
   transition: max-height 0.5s;
-  background: rgb(22, 133, 40);
+  background: #27272f;
   border-radius: 10px;
   padding: 0px 20px 0px 20px;
+  text-align: left;
 }
 
 .accordion.active + .panel {
   transition: max-height 3s;
   max-height: 3000px !important;
-  background: rgb(22, 133, 40);
+  background: #27272f;
   border-radius: 10px;
-  padding: 20px 20px 30px 20px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  padding: 0px 20px 30px 20px;
 }
 
 .panel {
@@ -143,19 +136,4 @@ span.faqQw {
 }
 .accordion-wrapper {
   margin-bottom: 30px;
-}
-.accordion.active .accordion__title {
-  color: #00cff6;
-}
-
-.accordion.active .elementor-toggle-icon .fas {
-  color: #00cff6;
-  transform: rotate(-90deg);
-  padding: 5px;
-}
-
-.accordion .elementor-toggle-icon .fas {
-  color: #61c1e4;
-  transform: rotate(0deg);
-  padding: 5px;
 }

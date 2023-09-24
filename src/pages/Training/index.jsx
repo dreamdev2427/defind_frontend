@@ -318,7 +318,7 @@ const TrainingHome = () => {
         </div>
       </div>
       <div className="mt-[100px] container">
-        <div className="text-white text-4xl text-semibold text-center">
+        <div className="text-white text-4xl text-semibold text-center pb-10">
           Frequently<br></br> Asked questions
         </div>
         <PageFAQ></PageFAQ>
