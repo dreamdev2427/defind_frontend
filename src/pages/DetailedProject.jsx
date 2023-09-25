@@ -186,7 +186,7 @@ const DetailedProject = () => {
                 key={value}
                 value={value}
                 onClick={() => setActiveTab(value)}
-                className={"text-white"}
+                className={"text-white text-[20px] font-semibold"}
               >
                 {label}
               </Tab>
@@ -196,7 +196,7 @@ const DetailedProject = () => {
             <TabPanel
               key={"details"}
               value={"details"}
-              className="text-[#aaabb6]"
+              className="text-[#aaabb6] text-[16px] "
             >
               {`Orbiter Finance is designed as a decentralized cross-rollup bridge for transferring Ethereum-native assets. The system has two roles: Sender and Maker. The 'Maker' is required to deposit excess margin to Orbiter's contract before they can qualify to be a cross-rollup service provider to the 'Sender'. In the usual process, the 'Sender' sends assets to the 'Maker' on the 'Source Network', and the 'Maker' sends back to the 'Sender' on the 'Destination Network'. There are 3 types of smart contracts in Orbiter's security model. MDC: 'Maker' Deposit Contract, keep Maker’s Margin, handle the arbitration for 'Sender'. EBC: Event Binding Contract, store the margin rules and Makers’ charging standards. SPV: Simple Payment Verification. This proves the existence of the transaction in Orbiter. Orbiter's technology creates SPV for every domain supported. MDC, EBC, and all the SPVs are deployed on one domain that supports smart contracts in the Ethereum ecosystem. Learn more details by reading Technology.`}
 
@@ -205,159 +205,183 @@ const DetailedProject = () => {
                   <div className="flex relative">
                     <img
                       src={AvatarIcon}
-                      className="w-10 h-10  "
+                      className="w-[42px] h-[42px]  "
                       alt="avatar"
                     />
                     <img
                       src={AvatarIcon}
-                      className="w-10 h-10 absolute left-8 "
+                      className="w-[42px] h-[42px] absolute left-8 "
                       alt="avatar"
                     />
                     <img
                       src={AvatarIcon}
-                      className="w-10 h-10 absolute left-14 "
+                      className="w-[42px] h-[42px] absolute left-14 "
                       alt="avatar"
                     />
                   </div>
 
-                  <div className="text-[#cecfc5] text-left ml-24 ">
+                  <div className="text-[#cecfc5] text-left ml-24 text-sm">
                     Followed by LL United Club, Wall Street<br></br> Baby, and 8
                     others you follow
                   </div>
                 </div>
                 <div className="w-48 flex flex-col">
-                  <div className="text-white font-bold text-lg">
+                  <div className="text-white font-bold text-lg text-[19px]">
                     LIKE AND DISLIKE
                   </div>
                   <div className="flex w-full mt-2">
-                    <div className="bg-[#17C671] w-[87.0%] h-2 rounded-s-md"></div>
-                    <div className="bg-[#BC1729] w-[13.0%] h-2 rounded-e-md"></div>
+                    <div className="bg-[#17C671] w-[87.0%] h-[8px] rounded-s-md"></div>
+                    <div className="bg-[#BC1729] w-[13.0%] h-[8px] rounded-e-md"></div>
                   </div>
                   <div className="flex justify-between mt-4">
                     <div className="flex text-sm text-[#17C671] items-center">
-                      <img src={HandGreenIcon} className="w-8 h-8 mr-1" />
+                      <img
+                        src={HandGreenIcon}
+                        className="w-[24px] h-[24px] mr-1"
+                      />
                       87.0%
                     </div>
                     <div className="flex text-sm text-[#BC1729]  items-center">
                       13.0%
-                      <img src={HandRedIcon} className="w-8 h-8 ml-1" />
+                      <img
+                        src={HandRedIcon}
+                        className="w-[24px] h-[24px]  ml-1"
+                      />
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="text-lg font-bold my-10 text-white text-left">
+              <div className="text-2xl font-bold my-10 text-white text-left">
                 Last News
               </div>
-              <div className="flex flex-wrap w-full ">
-                <div className="flex text-white items-center mx-10 mb-10">
+              <div className="flex flex-wrap w-full justify-between gap-x-10 gap-y-10">
+                <div className="flex text-white items-center ">
                   <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
                   <div className="flex flex-col items-start ml-3 ">
                     <span className="text-sm text-[#aaabb6]">
                       Kevin Chisholm in Flutter
                     </span>
-                    <span>What’s new in Flutter 3.13</span>
+                    <span className="text-[18px]">
+                      What’s new in Flutter 3.13
+                    </span>
                     <span className="text-sm text-[#aaabb6]">
                       Aug 17 · 12 min read
                     </span>
                   </div>
                 </div>
 
-                <div className="flex text-white items-center mx-10 mb-10">
+                <div className="flex text-white items-center ">
                   <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
                   <div className="flex flex-col items-start ml-3 ">
                     <span className="text-sm text-[#aaabb6]">
                       Kevin Chisholm in Flutter
                     </span>
-                    <span>What’s new in Flutter 3.13</span>
+                    <span className="text-[18px]">
+                      What’s new in Flutter 3.13
+                    </span>
                     <span className="text-sm text-[#aaabb6]">
                       Aug 17 · 12 min read
                     </span>
                   </div>
                 </div>
 
-                <div className="flex text-white items-center mx-10 mb-10">
+                <div className="flex text-white items-center ">
                   <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
                   <div className="flex flex-col items-start ml-3 ">
                     <span className="text-sm text-[#aaabb6]">
                       Kevin Chisholm in Flutter
                     </span>
-                    <span>What’s new in Flutter 3.13</span>
+                    <span className="text-[18px]">
+                      What’s new in Flutter 3.13
+                    </span>
                     <span className="text-sm text-[#aaabb6]">
                       Aug 17 · 12 min read
                     </span>
                   </div>
                 </div>
-                <div className="flex text-white items-center mx-10 mb-10">
+                <div className="flex text-white items-center ">
                   <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
                   <div className="flex flex-col items-start ml-3 ">
                     <span className="text-sm text-[#aaabb6]">
                       Kevin Chisholm in Flutter
                     </span>
-                    <span>What’s new in Flutter 3.13</span>
-                    <span className="text-sm text-[#aaabb6]">
-                      Aug 17 · 12 min read
+                    <span className="text-[18px]">
+                      What’s new in Flutter 3.13
                     </span>
-                  </div>
-                </div>
-
-                <div className="flex text-white items-center mx-10 mb-10">
-                  <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
-                  <div className="flex flex-col items-start ml-3 ">
-                    <span className="text-sm text-[#aaabb6]">
-                      Kevin Chisholm in Flutter
-                    </span>
-                    <span>What’s new in Flutter 3.13</span>
                     <span className="text-sm text-[#aaabb6]">
                       Aug 17 · 12 min read
                     </span>
                   </div>
                 </div>
 
-                <div className="flex text-white items-center mx-10 mb-10">
+                <div className="flex text-white items-center ">
                   <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
                   <div className="flex flex-col items-start ml-3 ">
                     <span className="text-sm text-[#aaabb6]">
                       Kevin Chisholm in Flutter
                     </span>
-                    <span>What’s new in Flutter 3.13</span>
-                    <span className="text-sm text-[#aaabb6]">
-                      Aug 17 · 12 min read
+                    <span className="text-[18px]">
+                      What’s new in Flutter 3.13
                     </span>
-                  </div>
-                </div>
-                <div className="flex text-white items-center mx-10 mb-10">
-                  <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
-                  <div className="flex flex-col items-start ml-3 ">
-                    <span className="text-sm text-[#aaabb6]">
-                      Kevin Chisholm in Flutter
-                    </span>
-                    <span>What’s new in Flutter 3.13</span>
                     <span className="text-sm text-[#aaabb6]">
                       Aug 17 · 12 min read
                     </span>
                   </div>
                 </div>
 
-                <div className="flex text-white items-center mx-10 mb-10">
+                <div className="flex text-white items-center ">
                   <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
                   <div className="flex flex-col items-start ml-3 ">
                     <span className="text-sm text-[#aaabb6]">
                       Kevin Chisholm in Flutter
                     </span>
-                    <span>What’s new in Flutter 3.13</span>
+                    <span className="text-[18px]">
+                      What’s new in Flutter 3.13
+                    </span>
+                    <span className="text-sm text-[#aaabb6]">
+                      Aug 17 · 12 min read
+                    </span>
+                  </div>
+                </div>
+                <div className="flex text-white items-center">
+                  <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
+                  <div className="flex flex-col items-start ml-3 ">
+                    <span className="text-sm text-[#aaabb6]">
+                      Kevin Chisholm in Flutter
+                    </span>
+                    <span className="text-[18px]">
+                      What’s new in Flutter 3.13
+                    </span>
                     <span className="text-sm text-[#aaabb6]">
                       Aug 17 · 12 min read
                     </span>
                   </div>
                 </div>
 
-                <div className="flex text-white items-center mx-10 mb-10">
+                <div className="flex text-white items-center ">
                   <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
                   <div className="flex flex-col items-start ml-3 ">
                     <span className="text-sm text-[#aaabb6]">
                       Kevin Chisholm in Flutter
                     </span>
-                    <span>What’s new in Flutter 3.13</span>
+                    <span className="text-[18px]">
+                      What’s new in Flutter 3.13
+                    </span>
+                    <span className="text-sm text-[#aaabb6]">
+                      Aug 17 · 12 min read
+                    </span>
+                  </div>
+                </div>
+
+                <div className="flex text-white items-center">
+                  <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
+                  <div className="flex flex-col items-start ml-3 ">
+                    <span className="text-sm text-[#aaabb6]">
+                      Kevin Chisholm in Flutter
+                    </span>
+                    <span className="text-[18px]">
+                      What’s new in Flutter 3.13
+                    </span>
                     <span className="text-sm text-[#aaabb6]">
                       Aug 17 · 12 min read
                     </span>
@@ -370,11 +394,13 @@ const DetailedProject = () => {
               value={"comments"}
               className="text-[#aaabb6]"
             >
-              <div className="w-full flex justify-between mt-3">
+              <div className="w-full flex justify-between mt-3 text-[18px] font-semibold">
                 <div className="text-white">12.6K Comments</div>
                 <PrimaryButton
                   label={"Add Comment"}
-                  className={"rounded-3xl w-36 h-12 text-white font-bold"}
+                  className={
+                    "w-[169px] h-12 text-white rounded-full text-sm font-semibold"
+                  }
                 />
               </div>
               <div className="w-full mt-5">
@@ -382,11 +408,13 @@ const DetailedProject = () => {
                   <div className="flex justify-start">
                     <img
                       src={Avatar2PNG}
-                      className="w-16 h-16"
+                      className="w-[88px] h-[88px]"
                       alt="avatar"
                     ></img>
                     <div className="flex flex-col ml-5">
-                      <div className="text-white text-left">Aurelien H</div>
+                      <div className="text-white text-left text-[20px] font-medium ">
+                        Aurelien H
+                      </div>
                       <div className="text-[#aaabb6] text-sm text-left">
                         The NFT began as a group of extraordinary individuals
                         who were assembled to defeat Loki and his Chitauri army
@@ -418,11 +446,13 @@ const DetailedProject = () => {
                   <div className="flex justify-start">
                     <img
                       src={Avatar2PNG}
-                      className="w-16 h-16"
+                      className="w-[88px] h-[88px]"
                       alt="avatar"
                     ></img>
                     <div className="flex flex-col ml-5">
-                      <div className="text-white text-left">Aurelien H</div>
+                      <div className="text-white text-left text-[20px] font-medium ">
+                        Aurelien H
+                      </div>
                       <div className="text-[#aaabb6] text-sm text-left">
                         The NFT began as a group of extraordinary individuals
                         who were assembled to defeat Loki and his Chitauri army
@@ -454,11 +484,13 @@ const DetailedProject = () => {
                   <div className="flex justify-start">
                     <img
                       src={Avatar2PNG}
-                      className="w-16 h-16"
+                      className="w-[88px] h-[88px]"
                       alt="avatar"
                     ></img>
                     <div className="flex flex-col ml-5">
-                      <div className="text-white text-left">Aurelien H</div>
+                      <div className="text-white text-left text-[20px] font-medium ">
+                        Aurelien H
+                      </div>
                       <div className="text-[#aaabb6] text-sm text-left">
                         The NFT began as a group of extraordinary individuals
                         who were assembled to defeat Loki and his Chitauri army
@@ -490,11 +522,13 @@ const DetailedProject = () => {
                   <div className="flex justify-start">
                     <img
                       src={Avatar2PNG}
-                      className="w-16 h-16"
+                      className="w-[88px] h-[88px]"
                       alt="avatar"
                     ></img>
                     <div className="flex flex-col ml-5">
-                      <div className="text-white text-left">Aurelien H</div>
+                      <div className="text-white text-left text-[20px] font-medium ">
+                        Aurelien H
+                      </div>
                       <div className="text-[#aaabb6] text-sm text-left">
                         The NFT began as a group of extraordinary individuals
                         who were assembled to defeat Loki and his Chitauri army
@@ -526,11 +560,13 @@ const DetailedProject = () => {
                   <div className="flex justify-start">
                     <img
                       src={Avatar2PNG}
-                      className="w-16 h-16"
+                      className="w-[88px] h-[88px]"
                       alt="avatar"
                     ></img>
                     <div className="flex flex-col ml-5">
-                      <div className="text-white text-left">Aurelien H</div>
+                      <div className="text-white text-left text-[20px] font-medium ">
+                        Aurelien H
+                      </div>
                       <div className="text-[#aaabb6] text-sm text-left">
                         The NFT began as a group of extraordinary individuals
                         who were assembled to defeat Loki and his Chitauri army
