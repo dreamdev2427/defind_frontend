@@ -89,7 +89,7 @@ const DetailedProject = () => {
                   </div>
                 </div>
 
-                <div className="mt-3 flex ">
+                <div className="mt-10 flex ">
                   <div className="flex relative">
                     <img src={AvatarIcon} className="w-8 h-8  " alt="avatar" />
                     <img
@@ -106,7 +106,7 @@ const DetailedProject = () => {
                 </div>
               </div>
               <div className="flex  gap-4 ">
-                <div className="flex flex-col  mt-6 ">
+                <div className="flex flex-col  mt-10 ">
                   <div className="text-[#aaabb6] text-lg min-w-30 h-12 flex flex-col justify-center">
                     <div className="text-left text-sm font-medium">
                       Contract
@@ -123,7 +123,7 @@ const DetailedProject = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col items-start justify-between mt-6 h-36">
+                <div className="flex flex-col items-start justify-between mt-10 h-36">
                   <input
                     disabled={true}
                     value={"0x4a2ed6fd89g25v69......3b9c"}
@@ -196,10 +196,28 @@ const DetailedProject = () => {
             <TabPanel
               key={"details"}
               value={"details"}
-              className="text-[#aaabb6] text-[16px] "
+              className="text-[#aaabb6] text-[16px] text-left"
             >
-              {`Orbiter Finance is designed as a decentralized cross-rollup bridge for transferring Ethereum-native assets. The system has two roles: Sender and Maker. The 'Maker' is required to deposit excess margin to Orbiter's contract before they can qualify to be a cross-rollup service provider to the 'Sender'. In the usual process, the 'Sender' sends assets to the 'Maker' on the 'Source Network', and the 'Maker' sends back to the 'Sender' on the 'Destination Network'. There are 3 types of smart contracts in Orbiter's security model. MDC: 'Maker' Deposit Contract, keep Maker’s Margin, handle the arbitration for 'Sender'. EBC: Event Binding Contract, store the margin rules and Makers’ charging standards. SPV: Simple Payment Verification. This proves the existence of the transaction in Orbiter. Orbiter's technology creates SPV for every domain supported. MDC, EBC, and all the SPVs are deployed on one domain that supports smart contracts in the Ethereum ecosystem. Learn more details by reading Technology.`}
-
+              Orbiter Finance is designed as a decentralized cross-rollup bridge
+              for transferring Ethereum-native assets. The system has two roles:
+              Sender and Maker. The 'Maker' is required to deposit excess margin
+              to Orbiter's contract before they can qualify to be a cross-rollup
+              service provider to the 'Sender'. In the usual process, the
+              'Sender' sends assets to the 'Maker' on the 'Source Network', and
+              the 'Maker' sends back to the 'Sender' on the 'Destination
+              Network'. There are 3 types of smart contracts in Orbiter's
+              security model.
+              <br />
+              . MDC: 'Maker' Deposit Contract, keep Maker’s Margin, handle the
+              arbitration for 'Sender'.
+              <br />
+              . EBC: Event Binding Contract, store the margin rules and Makers’
+              charging standards.
+              <br />. SPV: Simple Payment Verification. This proves the
+              existence of the transaction in Orbiter. Orbiter's technology
+              creates SPV for every domain supported. MDC, EBC, and all the SPVs
+              are deployed on one domain that supports smart contracts in the
+              Ethereum ecosystem. Learn more details by reading Technology.
               <div className="mt-10 flex items-center justify-between">
                 <div className="mt-3 flex ">
                   <div className="flex relative">

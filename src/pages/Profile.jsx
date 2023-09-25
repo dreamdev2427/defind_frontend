@@ -117,7 +117,7 @@ const Profile = () => {
                     )}
                   </div>
                   <div className="flex flex-col ml-4 justify-center">
-                    <div className="text-3xl text-white text-left">
+                    <div className="text-4xl font-medium text-white text-left">
                       Jenifer Loren
                     </div>
                     <div className="text-[#aaabb6] flex items-center font-medium">
