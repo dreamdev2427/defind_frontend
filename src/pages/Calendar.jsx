@@ -12,9 +12,7 @@ const Calendar = () => {
         </div>
         <div className="flex justify-between  text-white items-center">
           <div className="flex justify-start">
-            <span className="cursor-pointer mr-2 rounded-md text-lg">
-              May 29th
-            </span>
+            <span className="cursor-pointer mr-2 rounded-md ">May 29th</span>
           </div>
           <div className="flex justify-end gap-2">
             <div className="cursor-pointer p-3 h-[34px] rounded-md bg-[#1D1D25] bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] flex justify-center items-center">
@@ -50,12 +48,12 @@ const Calendar = () => {
                   alt="notification icon"
                 />
               </div>
-              <div className="text-xl font-bold  mt-3 text-white text-left">
+              <div className="text-xl font-semibold  mt-3 text-white text-left">
                 {item.text}
               </div>
               <div className="flex gap-1 mt-1">
-                <div className=" text-sm text-[#aaabb6] rounded-[6px] ml-1">
-                  {new Date().toLocaleDateString()}
+                <div className=" text-[12px] font-mixed text-[#aaabb6] rounded-[6px] ">
+                  Launch: May 29th 11:30 am UTC
                 </div>
               </div>
             </div>
