@@ -49,15 +49,15 @@ const ProductSlider = ({ title, items, hideArrow }) => {
   const sliderRef = useRef();
 
   return (
-    <section className="mt-5 bg-transparent w-full shadow overflow-hidden">
+    <section className="mt-10 bg-transparent w-full shadow overflow-hidden">
       <div className="flex justify-between items-center">
-        <div className=" px-6 ">
+        <div className=" ">
           <h1 className="text-xl font-medium text-white">{title}</h1>
         </div>
         {hideArrow === true ? (
           <></>
         ) : (
-          <div className="flex gap-2 px-6">
+          <div className="flex gap-2 px-2">
             <img
               src={LeftBlackPNG}
               className="w-8 h-8"
@@ -73,14 +73,14 @@ const ProductSlider = ({ title, items, hideArrow }) => {
           </div>
         )}
       </div>
-      <Slider {...settings} className="border-none" ref={sliderRef}>
+      <Slider {...settings} className="border-none  w-full " ref={sliderRef}>
         {items.map((item, i) => (
           <Link
             key={i}
             to="/detailed_project"
             className="flex flex-col items-center gap-1.5 py-3 cursor-pointer"
           >
-            <div className="w-[216px] h-[150px] transform hover:scale-110 transition-transform duration-150 ease-out relative">
+            <div className="w-[200px] h-[140px] transform hover:scale-110 transition-transform duration-150 ease-out relative">
               <img
                 draggable="false"
                 className="object-cover w-full h-full rounded-xl "
@@ -92,7 +92,7 @@ const ProductSlider = ({ title, items, hideArrow }) => {
                 {item.text}
               </h2>
             </div>
-            <div className="flex gap-1 mt-4">
+            <div className="flex gap-1 mt-3">
               {item.property.map((x, index) => (
                 <div
                   key={index}

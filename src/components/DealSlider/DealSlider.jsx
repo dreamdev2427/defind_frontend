@@ -68,7 +68,7 @@ export const settings = {
 const DealSlider = ({ title }) => {
   return (
     <section className="bg-transparent w-full shadow overflow-hidden">
-      <Slider {...settings} className="border-none w-full px-4">
+      <Slider {...settings} className="border-none w-full ">
         <img
           src={img1}
           className="rounded-[16px] border-none w-[433px] h-[247px]"

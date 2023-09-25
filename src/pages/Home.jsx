@@ -75,7 +75,7 @@ const Home = () => {
   return (
     <div className="w-full h-full min-h-[100vh] flex flex-col items-center ">
       <div className="container">
-        <div className="text-white mb-2 text-left text-2xl font-semibold ">
+        <div className="text-white mb-2  text-left text-2xl font-semibold ">
           Featured
         </div>
 
