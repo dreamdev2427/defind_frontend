@@ -345,7 +345,7 @@ const Profile = () => {
               value={"mycryptoprojects"}
               className="py-0 pl-10 min-h-[100vh]"
             >
-              <div className="text-lg text-white text-left ml-10">
+              <div className="text-2xl font-semibold text-white text-left ">
                 My projects
               </div>
 
@@ -362,7 +362,7 @@ const Profile = () => {
               value={"password"}
               className="py-0 pl-10 min-h-[100vh]"
             >
-              <div className="text-lg text-white text-center ml-10">
+              <div className="text-2xl font-semibold text-white text-center ml-10">
                 Change password
               </div>
               <div className="w-full flex justify-center">
@@ -436,7 +436,9 @@ const Profile = () => {
               value={"notifications"}
               className="py-0 pl-10 min-h-[100vh]"
             >
-              <div className="text-lg text-white text-left">Notifications</div>
+              <div className="text-2xl font-semibold text-white text-left">
+                Notifications
+              </div>
               <div className="bg-[#1D1D25] rounded-2xl px-5 py-8 mt-5 w-full ">
                 <div className="pb-5 border-b-[1px] border-b-[#4C4C56]">
                   <div className="text-white text-left">
@@ -553,8 +555,10 @@ const Profile = () => {
             >
               <div className="flex justify-between items-center border-b-[#4C4C56] border-b-[1px] pb-5 ">
                 <div className="flex flex-col">
-                  <div className="text-lg text-white text-left">Feed</div>
-                  <div className="text-sm text-[#CECFD5] text-left">
+                  <div className="text-2xl font-semibold text-white text-left">
+                    Feed
+                  </div>
+                  <div className="text-[12px] text-[#CECFD5] text-left">
                     You can select that you want to show on home page
                   </div>
                 </div>
