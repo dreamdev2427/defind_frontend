@@ -481,11 +481,11 @@ const Profile = () => {
                       <div className="ml-10 text-white">Push</div>
                     </div>
                     <div className="flex">
-                      <Switch color="red" defaultChecked />
+                      <Switch color="blue" defaultChecked />
                       <div className="ml-10 text-white">Email</div>
                     </div>
                     <div className="flex">
-                      <Switch color="green" defaultChecked />
+                      <Switch color="blue" defaultChecked />
                       <div className="ml-10 text-white">SMS</div>
                     </div>
                   </div>
@@ -507,11 +507,11 @@ const Profile = () => {
                       <div className="ml-10 text-white">Push</div>
                     </div>
                     <div className="flex">
-                      <Switch color="red" defaultChecked />
+                      <Switch color="blue" defaultChecked />
                       <div className="ml-10 text-white">Email</div>
                     </div>
                     <div className="flex">
-                      <Switch color="green" defaultChecked />
+                      <Switch color="blue" defaultChecked />
                       <div className="ml-10 text-white">SMS</div>
                     </div>
                   </div>
@@ -533,11 +533,11 @@ const Profile = () => {
                       <div className="ml-10 text-white">Push</div>
                     </div>
                     <div className="flex">
-                      <Switch color="red" defaultChecked />
+                      <Switch color="blue" defaultChecked />
                       <div className="ml-10 text-white">Email</div>
                     </div>
                     <div className="flex">
-                      <Switch color="green" defaultChecked />
+                      <Switch color="blue" defaultChecked />
                       <div className="ml-10 text-white">SMS</div>
                     </div>
                   </div>
@@ -559,11 +559,11 @@ const Profile = () => {
                       <div className="ml-10 text-white">Push</div>
                     </div>
                     <div className="flex">
-                      <Switch color="red" defaultChecked />
+                      <Switch color="blue" defaultChecked />
                       <div className="ml-10 text-white">Email</div>
                     </div>
                     <div className="flex">
-                      <Switch color="green" defaultChecked />
+                      <Switch color="blue" defaultChecked />
                       <div className="ml-10 text-white">SMS</div>
                     </div>
                   </div>
