@@ -218,7 +218,7 @@ const DetailedProject = () => {
               creates SPV for every domain supported. MDC, EBC, and all the SPVs
               are deployed on one domain that supports smart contracts in the
               Ethereum ecosystem. Learn more details by reading Technology.
-              <div className="mt-10 flex items-center justify-between">
+              <div className="mt-20 flex items-center justify-between">
                 <div className="mt-3 flex ">
                   <div className="flex relative">
                     <img
@@ -273,21 +273,6 @@ const DetailedProject = () => {
                 Last News
               </div>
               <div className="flex flex-wrap w-full justify-between gap-x-10 gap-y-10">
-                <div className="flex text-white items-center ">
-                  <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
-                  <div className="flex flex-col items-start ml-3 ">
-                    <span className="text-sm text-[#aaabb6]">
-                      Kevin Chisholm in Flutter
-                    </span>
-                    <span className="text-[18px]">
-                      What’s new in Flutter 3.13
-                    </span>
-                    <span className="text-sm text-[#aaabb6]">
-                      Aug 17 · 12 min read
-                    </span>
-                  </div>
-                </div>
-
                 <div className="flex text-white items-center ">
                   <img src={NewsIcon} className="w-10 h-10" alt="news icon" />
                   <div className="flex flex-col items-start ml-3 ">
@@ -413,7 +398,9 @@ const DetailedProject = () => {
               className="text-[#aaabb6]"
             >
               <div className="w-full flex justify-between mt-3 text-[18px] font-semibold">
-                <div className="text-white">12.6K Comments</div>
+                <div className="text-white text-lg font-semibold">
+                  12.6K Comments
+                </div>
                 <PrimaryButton
                   label={"Add Comment"}
                   className={
@@ -498,83 +485,7 @@ const DetailedProject = () => {
                   </div>
                 </div>
 
-                <div className="flex justify-between border-b-[#43465E] border-b-[1px] py-5">
-                  <div className="flex justify-start">
-                    <img
-                      src={Avatar2PNG}
-                      className="w-[88px] h-[88px]"
-                      alt="avatar"
-                    ></img>
-                    <div className="flex flex-col ml-5">
-                      <div className="text-white text-left text-[20px] font-medium ">
-                        Aurelien H
-                      </div>
-                      <div className="text-[#aaabb6] text-sm text-left">
-                        The NFT began as a group of extraordinary individuals
-                        who were assembled to defeat Loki and his Chitauri army
-                        in New York City. Since then, the team has expanded its
-                        roster The NFT began as a group of extraordinary
-                        individuals who were assembled to defeat Loki and his
-                        Chitauri ..
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex flex-col justify-between items-end px-5">
-                    <img src={DotsIcon} className="w-5 h-5" alt="dot icon" />
-                    <div className="flex gap-3">
-                      <img
-                        src={ShieldCrossIcon}
-                        className="w-5 h-5"
-                        alt="cross icon"
-                      />
-                      <img
-                        src={ShieldCheckIcon}
-                        className="w-5 h-5"
-                        alt="check icon"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex justify-between border-b-[#43465E] border-b-[1px] py-5">
-                  <div className="flex justify-start">
-                    <img
-                      src={Avatar2PNG}
-                      className="w-[88px] h-[88px]"
-                      alt="avatar"
-                    ></img>
-                    <div className="flex flex-col ml-5">
-                      <div className="text-white text-left text-[20px] font-medium ">
-                        Aurelien H
-                      </div>
-                      <div className="text-[#aaabb6] text-sm text-left">
-                        The NFT began as a group of extraordinary individuals
-                        who were assembled to defeat Loki and his Chitauri army
-                        in New York City. Since then, the team has expanded its
-                        roster The NFT began as a group of extraordinary
-                        individuals who were assembled to defeat Loki and his
-                        Chitauri ..
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex flex-col justify-between items-end px-5">
-                    <img src={DotsIcon} className="w-5 h-5" alt="dot icon" />
-                    <div className="flex gap-3">
-                      <img
-                        src={ShieldCrossIcon}
-                        className="w-5 h-5"
-                        alt="cross icon"
-                      />
-                      <img
-                        src={ShieldCheckIcon}
-                        className="w-5 h-5"
-                        alt="check icon"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex justify-between border-b-[#43465E] border-b-[1px] py-5">
+                <div className="flex justify-between  py-5">
                   <div className="flex justify-start">
                     <img
                       src={Avatar2PNG}
@@ -612,14 +523,15 @@ const DetailedProject = () => {
                   </div>
                 </div>
               </div>
-              <input
-                type="string"
-                placeholder="Type here..."
-                className="mt-10 w-full min-h-[135px] rounded-xl border-[#4C4C56] border-[1px] bg-[#1D1D25]
+
+              <div className="flex justify-between items-center mt-20 ">
+                <input
+                  type="string"
+                  placeholder="Type here..."
+                  className="w-10/12 min-h-[135px] rounded-xl border-[#4C4C56] border-[1px] bg-[#1D1D25]
               focus:border-[#4C4C56] focus:border-[1px] text-white px-2
               "
-              />
-              <div className="flex justify-start">
+                />
                 <PrimaryButton
                   className="w-36 h-14 rounded-2xl mt-5 text-white font-medium"
                   label={"Submit"}
