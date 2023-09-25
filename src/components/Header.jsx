@@ -62,7 +62,7 @@ const Header = () => {
                     Notifications
                   </span>
                   <img
-                    className="w-6 h-6 cursor-pointer mr-3"
+                    className="w-6 h-6 cursor-pointer mr-5"
                     onClick={() => setShowNotificationDlg(!showNotificationDlg)}
                     src={CrossSVG}
                     alt="cross icon"
@@ -71,7 +71,7 @@ const Header = () => {
 
                 <div
                   className="flex w-full justify-between items-center
-                border-b-black border-b-[1px] py-4 px-3
+                 py-4 px-3
                 hover:bg-[#1D1D25]
               "
                 >
@@ -94,10 +94,13 @@ const Header = () => {
                     </span>
                   </div>
                 </div>
+                <div className="w-full justify-center flex px-3">
+                  <div className=" border-b-black border-b-[1px] w-full  "></div>
+                </div>
 
                 <div
                   className="flex w-full justify-between items-center
-                border-b-black border-b-[1px] py-4 px-3
+                 py-4 px-3
                 hover:bg-[#1D1D25]
               "
                 >
@@ -120,10 +123,13 @@ const Header = () => {
                     </span>
                   </div>
                 </div>
+                <div className="w-full justify-center flex px-3">
+                  <div className=" border-b-black border-b-[1px] w-full  "></div>
+                </div>
 
                 <div
                   className="flex w-full justify-between items-center
-                border-b-black border-b-[1px] py-4 px-3
+                 py-4 px-3
                 hover:bg-[#1D1D25]
               "
                 >
@@ -146,10 +152,13 @@ const Header = () => {
                     </span>
                   </div>
                 </div>
+                <div className="w-full justify-center flex px-3">
+                  <div className=" border-b-black border-b-[1px] w-full  "></div>
+                </div>
 
                 <div
                   className="flex w-full justify-between items-center
-                border-b-black border-b-[1px] py-4 px-3
+                 py-4 px-3
                 hover:bg-[#1D1D25]
               "
                 >
@@ -171,6 +180,38 @@ const Header = () => {
                       Your post is trending in the hot section.
                     </span>
                   </div>
+                </div>
+                <div className="w-full justify-center flex px-3">
+                  <div className=" border-b-black border-b-[1px] w-full  "></div>
+                </div>
+
+                <div
+                  className="flex w-full justify-between items-center
+                 py-4 px-3
+                hover:bg-[#1D1D25]
+              "
+                >
+                  <img
+                    className="w-8 h-8 cursor-pointer mr-3"
+                    src={AvatarPNG}
+                    alt="avatar"
+                  />
+                  <div className="flex flex-col items-start w-full">
+                    <div className="flex justify-between items-center w-full">
+                      <span className="text -white font-semibold">
+                        Trending
+                      </span>
+                      <span className="ml-3 text-sm text-[12px] text-[#E2E2E4]">
+                        7:56 AM
+                      </span>
+                    </div>
+                    <span className="text-[#E2E2E4] text-left text-sm ">
+                      Your post is trending in the hot section.
+                    </span>
+                  </div>
+                </div>
+                <div className="w-full justify-center flex px-3">
+                  <div className=" border-b-black border-b-[1px] w-full  "></div>
                 </div>
               </div>
             )}
