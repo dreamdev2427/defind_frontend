@@ -202,7 +202,7 @@ const Profile = () => {
                     in New York City roste...{" "}
                     <span className="text-white">More</span>
                   </div>
-                  <div className="bg-[#4C4C56] rounded-xl text-[#aaabb6] px-10 py-5">
+                  <div className="bg-[#1D1D25] rounded-xl text-[#aaabb6] px-10 py-5">
                     <table>
                       <thead className="font-medium text-sm">
                         <th align="left">Website</th>
