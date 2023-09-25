@@ -457,18 +457,20 @@ const Profile = () => {
               </div>
               <div className="bg-[#1D1D25] rounded-2xl px-5 py-8 mt-5 w-full ">
                 <div className="pb-5 border-b-[1px] border-b-[#4C4C56]">
-                  <div className="text-white text-left">
+                  <div className="text-lg font-semibold text-white text-left">
                     Notification settings
                   </div>
-                  <div className="text-[#aaabb6] text-left">
+                  <div className="text-[#aaabb6] text-left text-sm">
                     We may still send you important notifications about your
                     account outside of your notification settings.
                   </div>
                 </div>
                 <div className="pb-5 border-b-[1px] border-b-[#4C4C56] pt-5 flex w-full justify-between">
                   <div className="">
-                    <div className="text-white text-left">Comments</div>
-                    <div className="text-[#aaabb6] text-left">
+                    <div className="text-lg font-semibold text-white text-left">
+                      Comments
+                    </div>
+                    <div className="text-[#aaabb6] text-left text-sm">
                       These are notifications for comments on your posts and
                       replies to your comments.
                     </div>
@@ -491,8 +493,10 @@ const Profile = () => {
 
                 <div className="pb-5 border-b-[1px] border-b-[#4C4C56] pt-5 flex w-full justify-between">
                   <div className="">
-                    <div className="text-white text-left">Tags</div>
-                    <div className="text-[#aaabb6] text-left">
+                    <div className="text-lg font-semibold text-white text-left">
+                      Tags
+                    </div>
+                    <div className="text-[#aaabb6] text-left text-sm">
                       These are notifications for comments on your posts and
                       replies to your comments.
                     </div>
@@ -515,8 +519,10 @@ const Profile = () => {
 
                 <div className="pb-5 border-b-[1px] border-b-[#4C4C56] pt-5 flex w-full justify-between">
                   <div className="">
-                    <div className="text-white text-left">Reminders</div>
-                    <div className="text-[#aaabb6] text-left">
+                    <div className="text-lg font-semibold text-white text-left">
+                      Reminders
+                    </div>
+                    <div className="text-[#aaabb6] text-left text-sm">
                       These are notifications for comments on your posts and
                       replies to your comments.
                     </div>
@@ -537,12 +543,12 @@ const Profile = () => {
                   </div>
                 </div>
 
-                <div className="pb-5 pt-5 flex w-full justify-between">
+                <div className="pb-5 border-b-[1px] border-b-[#4C4C56] pt-5 flex w-full justify-between">
                   <div className="">
-                    <div className="text-white text-left">
-                      Mare activity about you
+                    <div className="text-lg font-semibold text-white text-left">
+                      More activity about you
                     </div>
-                    <div className="text-[#aaabb6] text-left">
+                    <div className="text-[#aaabb6] text-left text-sm">
                       These are notifications for comments on your posts and
                       replies to your comments.
                     </div>
