@@ -38,7 +38,7 @@ const Header = () => {
               Learn
             </div>
             <div className="text-white mx-2" onClick={() => navigate("/news")}>
-              ...
+              News
             </div>
           </div>
         </div>

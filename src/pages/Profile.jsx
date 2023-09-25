@@ -6,7 +6,7 @@ import {
   TabPanel,
 } from "@material-tailwind/react";
 import { useState } from "react";
-import AvatarImg from "../assets/avatar2.png";
+import AvatarImg from "../assets/clearAvatar.png";
 import VerifiedBlueTick from "../assets/VerifiedBlueTick.png";
 import CopyIcon from "../assets/copy.svg";
 import GoOutsideIcon from "../assets/gooutsideicon.png";
@@ -105,13 +105,13 @@ const Profile = () => {
                     {isInEditionOfProofile === false ? (
                       <img
                         src={VerifiedBlueTick}
-                        className="w-6 h-6 absolute bottom-0 right-6"
+                        className="w-8 h-8 absolute bottom-0 right-6"
                         alt="verified icon"
                       />
                     ) : (
                       <img
                         src={Editicon}
-                        className="w-6 h-6 absolute bottom-0 right-6"
+                        className="w-8 h-8 absolute bottom-0 right-6"
                         alt="verified icon"
                       />
                     )}
