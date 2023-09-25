@@ -14,29 +14,33 @@ import News from "./pages/News";
 import CourseDetailed from "./pages/Training/CourseDetailed";
 import NewsDetailed from "./pages/News/NewsDetailed";
 
+import { ThemeProvider } from "@material-tailwind/react";
+
 import "./App.css";
 
 function App() {
   return (
     <div className="App bg-[#0E0E16] ">
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/settings" element={<Profile />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/login_with_email" element={<LoginWithEmail />} />
-          <Route path="/lock_lp" element={<LockLP />} />
-          <Route path="/favorite" element={<Favorite />} />
-          <Route path="/detailed_project" element={<DetailedProject />} />
-          <Route path="/calendar" element={<Calendar />} />
-          <Route path="/training" element={<Training />} />
-          <Route path="/detailed_course" element={<CourseDetailed />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/detailed_news" element={<NewsDetailed />} />
-        </Routes>
-      </BrowserRouter>
+      <ThemeProvider>
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/settings" element={<Profile />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/login_with_email" element={<LoginWithEmail />} />
+            <Route path="/lock_lp" element={<LockLP />} />
+            <Route path="/favorite" element={<Favorite />} />
+            <Route path="/detailed_project" element={<DetailedProject />} />
+            <Route path="/calendar" element={<Calendar />} />
+            <Route path="/training" element={<Training />} />
+            <Route path="/detailed_course" element={<CourseDetailed />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/detailed_news" element={<NewsDetailed />} />
+          </Routes>
+        </BrowserRouter>
+      </ThemeProvider>
     </div>
   );
 }

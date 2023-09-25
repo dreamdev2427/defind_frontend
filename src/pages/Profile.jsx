@@ -4,6 +4,7 @@ import {
   TabsBody,
   Tab,
   TabPanel,
+  Switch,
 } from "@material-tailwind/react";
 import { useRef, useState } from "react";
 import AvatarImg from "../assets/clearAvatar.png";
@@ -17,7 +18,6 @@ import EyeOffSVG from "../assets/eye-off.svg";
 import CopySVG from "../assets/copy.svg";
 import ProductSlider from "../components/ProductSlider/ProductSlider";
 import { exampleItems } from "./Home";
-import { Switch } from "@material-tailwind/react";
 
 const Profile = () => {
   const data = [
