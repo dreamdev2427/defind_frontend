@@ -603,7 +603,7 @@ const DetailedProject = () => {
               />
               <div className="flex justify-start">
                 <PrimaryButton
-                  className="w-36 h-12 rounded-3xl mt-5 text-white font-bold"
+                  className="w-36 h-14 rounded-2xl mt-5 text-white font-medium"
                   label={"Submit"}
                 />
               </div>
