@@ -50,9 +50,9 @@ const ProductSlider = ({ title, items, hideArrow, itemsInRow = 6 }) => {
 
   return (
     <section className="mt-10 bg-transparent w-full shadow overflow-hidden">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center pb-3">
         <div className=" ">
-          <h1 className="text-xl font-medium text-white">{title}</h1>
+          <h1 className="text-2xl font-semibold text-white">{title}</h1>
         </div>
         {hideArrow === true ? (
           <></>
@@ -94,7 +94,7 @@ const ProductSlider = ({ title, items, hideArrow, itemsInRow = 6 }) => {
                 alt={item.text}
               />
               <div className="bg-gradient-to-t from-[#000000af] w-full h-1/2 absolute bottom-0 z-5 rounded-b-[10px] "></div>
-              <h2 className="text-md font-bold  ml-2 absolute bottom-2 text-white z-10">
+              <h2 className="font-medium  ml-4 absolute bottom-1 text-white z-10">
                 {item.text}
               </h2>
             </div>
@@ -102,7 +102,7 @@ const ProductSlider = ({ title, items, hideArrow, itemsInRow = 6 }) => {
               {item.property.map((x, index) => (
                 <div
                   key={index}
-                  className=" text-sm text-[#aaabb6] bg-[#aaabb63f] p-2 rounded-[6px] ml-1"
+                  className=" text-[12px] font-medium text-[#aaabb6] bg-[#aaabb63f] px-2 py-1 rounded-[8px] ml-1"
                 >
                   {x}
                 </div>
