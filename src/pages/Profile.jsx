@@ -672,6 +672,240 @@ const Profile = () => {
                   >
                     ETH
                   </div>
+                  <div
+                    className={`
+                    ${
+                      nftActivity
+                        ? "bg-transparent border-[1px] rounded-[10px] border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-[10px] text-white"
+                    }
+                    px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setNftActivity(!nftActivity)}
+                  >
+                    NFT
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    shitcoinActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                  px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setShitcoinActivity(!shitcoinActivity)}
+                  >
+                    Shitcoin
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    englishActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setEnglichActivity(!englishActivity)}
+                  >
+                    English
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    defiActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setDefiActivity(!defiActivity)}
+                  >
+                    Defi
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ohmActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setOhmActivity(!ohmActivity)}
+                  >
+                    OHM
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ethActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setEthActivity(!ethActivity)}
+                  >
+                    ETH
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      nftActivity
+                        ? "bg-transparent border-[1px] rounded-[10px] border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-[10px] text-white"
+                    }
+                    px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setNftActivity(!nftActivity)}
+                  >
+                    NFT
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    shitcoinActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                  px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setShitcoinActivity(!shitcoinActivity)}
+                  >
+                    Shitcoin
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    englishActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setEnglichActivity(!englishActivity)}
+                  >
+                    English
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    defiActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setDefiActivity(!defiActivity)}
+                  >
+                    Defi
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ohmActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setOhmActivity(!ohmActivity)}
+                  >
+                    OHM
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ethActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setEthActivity(!ethActivity)}
+                  >
+                    ETH
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      nftActivity
+                        ? "bg-transparent border-[1px] rounded-[10px] border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-[10px] text-white"
+                    }
+                    px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setNftActivity(!nftActivity)}
+                  >
+                    NFT
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    shitcoinActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                  px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setShitcoinActivity(!shitcoinActivity)}
+                  >
+                    Shitcoin
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    englishActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setEnglichActivity(!englishActivity)}
+                  >
+                    English
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    defiActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setDefiActivity(!defiActivity)}
+                  >
+                    Defi
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ohmActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setOhmActivity(!ohmActivity)}
+                  >
+                    OHM
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ethActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setEthActivity(!ethActivity)}
+                  >
+                    ETH
+                  </div>
                 </div>
               </div>
 
@@ -680,6 +914,880 @@ const Profile = () => {
                   Network
                 </div>
                 <div className="flex flex-wrap">
+                  <div
+                    className={`
+                    ${
+                      nftActivity
+                        ? "bg-transparent border-[1px] rounded-[10px] border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-[10px] text-white"
+                    }
+                    px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setNftActivity(!nftActivity)}
+                  >
+                    NFT
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    shitcoinActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                  px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setShitcoinActivity(!shitcoinActivity)}
+                  >
+                    Shitcoin
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    englishActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setEnglichActivity(!englishActivity)}
+                  >
+                    English
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    defiActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setDefiActivity(!defiActivity)}
+                  >
+                    Defi
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ohmActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setOhmActivity(!ohmActivity)}
+                  >
+                    OHM
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ethActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setEthActivity(!ethActivity)}
+                  >
+                    ETH
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      nftActivity
+                        ? "bg-transparent border-[1px] rounded-[10px] border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-[10px] text-white"
+                    }
+                    px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setNftActivity(!nftActivity)}
+                  >
+                    NFT
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    shitcoinActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                  px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setShitcoinActivity(!shitcoinActivity)}
+                  >
+                    Shitcoin
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    englishActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setEnglichActivity(!englishActivity)}
+                  >
+                    English
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    defiActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setDefiActivity(!defiActivity)}
+                  >
+                    Defi
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ohmActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setOhmActivity(!ohmActivity)}
+                  >
+                    OHM
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ethActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setEthActivity(!ethActivity)}
+                  >
+                    ETH
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      nftActivity
+                        ? "bg-transparent border-[1px] rounded-[10px] border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-[10px] text-white"
+                    }
+                    px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setNftActivity(!nftActivity)}
+                  >
+                    NFT
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    shitcoinActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                  px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setShitcoinActivity(!shitcoinActivity)}
+                  >
+                    Shitcoin
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    englishActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setEnglichActivity(!englishActivity)}
+                  >
+                    English
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    defiActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setDefiActivity(!defiActivity)}
+                  >
+                    Defi
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ohmActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setOhmActivity(!ohmActivity)}
+                  >
+                    OHM
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ethActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setEthActivity(!ethActivity)}
+                  >
+                    ETH
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      nftActivity
+                        ? "bg-transparent border-[1px] rounded-[10px] border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-[10px] text-white"
+                    }
+                    px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setNftActivity(!nftActivity)}
+                  >
+                    NFT
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    shitcoinActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                  px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setShitcoinActivity(!shitcoinActivity)}
+                  >
+                    Shitcoin
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    englishActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setEnglichActivity(!englishActivity)}
+                  >
+                    English
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    defiActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setDefiActivity(!defiActivity)}
+                  >
+                    Defi
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ohmActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setOhmActivity(!ohmActivity)}
+                  >
+                    OHM
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ethActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setEthActivity(!ethActivity)}
+                  >
+                    ETH
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8">
+                <div className="test-2xl font-semibold text-white text-left text-lg ">
+                  Network
+                </div>
+                <div className="flex flex-wrap">
+                  <div
+                    className={`
+                    ${
+                      nftActivity
+                        ? "bg-transparent border-[1px] rounded-[10px] border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-[10px] text-white"
+                    }
+                    px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setNftActivity(!nftActivity)}
+                  >
+                    NFT
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    shitcoinActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                  px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setShitcoinActivity(!shitcoinActivity)}
+                  >
+                    Shitcoin
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    englishActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setEnglichActivity(!englishActivity)}
+                  >
+                    English
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    defiActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setDefiActivity(!defiActivity)}
+                  >
+                    Defi
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ohmActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setOhmActivity(!ohmActivity)}
+                  >
+                    OHM
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ethActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setEthActivity(!ethActivity)}
+                  >
+                    ETH
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      nftActivity
+                        ? "bg-transparent border-[1px] rounded-[10px] border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-[10px] text-white"
+                    }
+                    px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setNftActivity(!nftActivity)}
+                  >
+                    NFT
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    shitcoinActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                  px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setShitcoinActivity(!shitcoinActivity)}
+                  >
+                    Shitcoin
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    englishActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setEnglichActivity(!englishActivity)}
+                  >
+                    English
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    defiActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setDefiActivity(!defiActivity)}
+                  >
+                    Defi
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ohmActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setOhmActivity(!ohmActivity)}
+                  >
+                    OHM
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ethActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setEthActivity(!ethActivity)}
+                  >
+                    ETH
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      nftActivity
+                        ? "bg-transparent border-[1px] rounded-[10px] border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-[10px] text-white"
+                    }
+                    px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setNftActivity(!nftActivity)}
+                  >
+                    NFT
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    shitcoinActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                  px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setShitcoinActivity(!shitcoinActivity)}
+                  >
+                    Shitcoin
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    englishActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setEnglichActivity(!englishActivity)}
+                  >
+                    English
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    defiActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setDefiActivity(!defiActivity)}
+                  >
+                    Defi
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ohmActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setOhmActivity(!ohmActivity)}
+                  >
+                    OHM
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ethActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setEthActivity(!ethActivity)}
+                  >
+                    ETH
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      nftActivity
+                        ? "bg-transparent border-[1px] rounded-[10px] border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-[10px] text-white"
+                    }
+                    px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setNftActivity(!nftActivity)}
+                  >
+                    NFT
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    shitcoinActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                  px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setShitcoinActivity(!shitcoinActivity)}
+                  >
+                    Shitcoin
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    englishActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setEnglichActivity(!englishActivity)}
+                  >
+                    English
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    defiActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setDefiActivity(!defiActivity)}
+                  >
+                    Defi
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ohmActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setOhmActivity(!ohmActivity)}
+                  >
+                    OHM
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ethActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setEthActivity(!ethActivity)}
+                  >
+                    ETH
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8">
+                <div className="test-2xl font-semibold text-white text-left text-lg ">
+                  Network
+                </div>
+                <div className="flex flex-wrap">
+                  <div
+                    className={`
+                    ${
+                      nftActivity
+                        ? "bg-transparent border-[1px] rounded-[10px] border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-[10px] text-white"
+                    }
+                    px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setNftActivity(!nftActivity)}
+                  >
+                    NFT
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    shitcoinActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                  px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setShitcoinActivity(!shitcoinActivity)}
+                  >
+                    Shitcoin
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    englishActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setEnglichActivity(!englishActivity)}
+                  >
+                    English
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    defiActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setDefiActivity(!defiActivity)}
+                  >
+                    Defi
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ohmActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setOhmActivity(!ohmActivity)}
+                  >
+                    OHM
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ethActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setEthActivity(!ethActivity)}
+                  >
+                    ETH
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      nftActivity
+                        ? "bg-transparent border-[1px] rounded-[10px] border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-[10px] text-white"
+                    }
+                    px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setNftActivity(!nftActivity)}
+                  >
+                    NFT
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    shitcoinActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                  px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setShitcoinActivity(!shitcoinActivity)}
+                  >
+                    Shitcoin
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    englishActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setEnglichActivity(!englishActivity)}
+                  >
+                    English
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    defiActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setDefiActivity(!defiActivity)}
+                  >
+                    Defi
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ohmActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setOhmActivity(!ohmActivity)}
+                  >
+                    OHM
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ethActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setEthActivity(!ethActivity)}
+                  >
+                    ETH
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      nftActivity
+                        ? "bg-transparent border-[1px] rounded-[10px] border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-[10px] text-white"
+                    }
+                    px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setNftActivity(!nftActivity)}
+                  >
+                    NFT
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    shitcoinActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                  px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setShitcoinActivity(!shitcoinActivity)}
+                  >
+                    Shitcoin
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    englishActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setEnglichActivity(!englishActivity)}
+                  >
+                    English
+                  </div>
+                  <div
+                    className={`
+                  ${
+                    defiActivity
+                      ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                      : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                  }
+                    px-4 py-1 my-4 mr-3 font-medium
+                    `}
+                    onClick={() => setDefiActivity(!defiActivity)}
+                  >
+                    Defi
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ohmActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setOhmActivity(!ohmActivity)}
+                  >
+                    OHM
+                  </div>
+                  <div
+                    className={`
+                    ${
+                      ethActivity
+                        ? "bg-transparent border-[1px] rounded-lg border-[#CECFD5] text-[#CECFD5]"
+                        : "bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] rounded-lg text-white"
+                    }
+                      px-4 py-1 my-4 mr-3 font-medium
+                      `}
+                    onClick={() => setEthActivity(!ethActivity)}
+                  >
+                    ETH
+                  </div>
                   <div
                     className={`
                     ${
