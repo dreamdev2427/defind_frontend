@@ -45,7 +45,7 @@ export const settings = {
   ],
 };
 
-const ProductSlider = ({ title, items, hideArrow }) => {
+const ProductSlider = ({ title, items, hideArrow, itemsInRow = 6 }) => {
   const sliderRef = useRef();
 
   return (
@@ -73,14 +73,20 @@ const ProductSlider = ({ title, items, hideArrow }) => {
           </div>
         )}
       </div>
-      <Slider {...settings} className="border-none  w-full " ref={sliderRef}>
+      <Slider
+        {...settings}
+        slidesToShow={itemsInRow}
+        slidesToScroll={itemsInRow}
+        className="border-none  w-full "
+        ref={sliderRef}
+      >
         {items.map((item, i) => (
           <Link
             key={i}
             to="/detailed_project"
-            className="flex flex-col items-center gap-1.5 py-3 cursor-pointer"
+            className="flex flex-col items-center gap-1.5 py-2 cursor-pointer"
           >
-            <div className="w-[200px] h-[140px] transform hover:scale-110 transition-transform duration-150 ease-out relative">
+            <div className="w-[200px] h-[140px] transform hover:scale-105 transition-transform duration-150 ease-out relative">
               <img
                 draggable="false"
                 className="object-cover w-full h-full rounded-xl "

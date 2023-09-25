@@ -349,13 +349,29 @@ const Profile = () => {
                 My projects
               </div>
 
-              <ProductSlider items={exampleItems} hideArrow={true} />
+              <ProductSlider
+                items={exampleItems}
+                hideArrow={true}
+                itemsInRow={5}
+              />
 
-              <ProductSlider items={exampleItems} hideArrow={true} />
+              <ProductSlider
+                items={exampleItems}
+                hideArrow={true}
+                itemsInRow={5}
+              />
 
-              <ProductSlider items={exampleItems} hideArrow={true} />
+              <ProductSlider
+                items={exampleItems}
+                hideArrow={true}
+                itemsInRow={5}
+              />
 
-              <ProductSlider items={exampleItems} hideArrow={true} />
+              <ProductSlider
+                items={exampleItems}
+                hideArrow={true}
+                itemsInRow={5}
+              />
             </TabPanel>
             <TabPanel
               key={"password"}
