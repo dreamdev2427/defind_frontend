@@ -5,7 +5,7 @@ import {
   Tab,
   TabPanel,
 } from "@material-tailwind/react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import AvatarImg from "../assets/clearAvatar.png";
 import VerifiedBlueTick from "../assets/VerifiedBlueTick.png";
 import CopyIcon from "../assets/copy.svg";
@@ -59,6 +59,7 @@ const Profile = () => {
   const [defiActivity, setDefiActivity] = useState(true);
   const [ohmActivity, setOhmActivity] = useState(false);
   const [ethActivity, setEthActivity] = useState(false);
+  const refTab = useRef();
 
   return (
     <div className="w-full min-h-[100vh] flex flex-col items-center">
@@ -66,7 +67,12 @@ const Profile = () => {
         <div className=" text-white font-medium text-2xl border-b-[#4C4C56] border-[1px] pb-4 text-left ">
           Settings
         </div>
-        <Tabs value="html" orientation="vertical" className="mt-8">
+        <Tabs
+          value="mydetails"
+          orientation="vertical"
+          className="mt-8"
+          ref={refTab}
+        >
           <TabsHeader
             className="w-56 px-6 py-6 border-[#1D1D25] border-[1px] rounded-xl bg-[#1D1D25] min-h-[70vh]  "
             indicatorProps={{
