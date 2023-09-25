@@ -81,7 +81,11 @@ const Home = () => {
 
         <DealSlider />
 
-        <ProductSlider title="Top 10 Trending" items={exampleItems} />
+        <ProductSlider
+          title="Top 10 Trending"
+          items={exampleItems}
+          showCornerNumber={true}
+        />
 
         <ProductSlider title="Most Expected" items={exampleItems} />
 

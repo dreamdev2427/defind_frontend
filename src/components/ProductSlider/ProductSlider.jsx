@@ -1,8 +1,5 @@
 import React, { useRef } from "react";
-import Product from "./Product";
 import Slider from "react-slick";
-import { offerProducts } from "../../utils/constants";
-import { getRandomProducts } from "../../utils/functions";
 
 import LeftBlackPNG from "../../assets/smallLeftBlue.png";
 import RightBlackPNG from "../../assets/smallRightBlue.png";
@@ -45,7 +42,13 @@ export const settings = {
   ],
 };
 
-const ProductSlider = ({ title, items, hideArrow, itemsInRow = 6 }) => {
+const ProductSlider = ({
+  title,
+  items,
+  hideArrow,
+  itemsInRow = 6,
+  showCornerNumber = false,
+}) => {
   const sliderRef = useRef();
 
   return (
@@ -93,7 +96,16 @@ const ProductSlider = ({ title, items, hideArrow, itemsInRow = 6 }) => {
                 src={item.image}
                 alt={item.text}
               />
-              <div className="bg-gradient-to-t from-[#000000af] w-full h-1/2 absolute bottom-0 z-5 rounded-b-[10px] "></div>
+              {showCornerNumber === true && (
+                <div
+                  className="absolute z-5 top-0 right-0 bg-[#FF2828] text-white text-[21px] font-bold rounded-tr-xl
+                w-[32px] h-[42px] flex items-center justify-center
+              "
+                >
+                  0{i}
+                </div>
+              )}
+              <div className="bg-gradient-to-t from-[#000000ef]  w-full h-1/2 absolute bottom-0 z-5 rounded-b-[10px] "></div>
               <h2 className="font-medium  ml-4 absolute bottom-1 text-white z-10">
                 {item.text}
               </h2>
