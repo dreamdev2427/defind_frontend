@@ -52,13 +52,15 @@ const Header = () => {
               onClick={() => setShowNotificationDlg(!showNotificationDlg)}
             />
             {showNotificationDlg === true && (
-              <div className="absolute z-20 rounded-3xl right-0 top-0 bg-[#4C4C56] text-white py-5 w-72 ">
+              <div className="absolute z-20 rounded-3xl right-0 top-0 bg-[#4C4C56] text-white py-5 w-[390px] ">
                 <div
                   className="flex w-full justify-between items-center
                 border-b-black border-b-[1px] pb-3
               "
                 >
-                  <span className="ml-3 text-lg font-bold">Notifications</span>
+                  <span className="ml-5 text-xl font-semibold">
+                    Notifications
+                  </span>
                   <img
                     className="w-6 h-6 cursor-pointer mr-3"
                     onClick={() => setShowNotificationDlg(!showNotificationDlg)}
@@ -66,6 +68,7 @@ const Header = () => {
                     alt="cross icon"
                   />
                 </div>
+
                 <div
                   className="flex w-full justify-between items-center
                 border-b-black border-b-[1px] py-4 px-3
@@ -77,13 +80,19 @@ const Header = () => {
                     src={AvatarPNG}
                     alt="avatar"
                   />
-                  <div className="flex flex-col items-start">
-                    <span className="text-white">Trending</span>
-                    <span className="text-[#aaabb6] text-left">
+                  <div className="flex flex-col items-start w-full">
+                    <div className="flex justify-between items-center w-full">
+                      <span className="text -white font-semibold">
+                        Trending
+                      </span>
+                      <span className="ml-3 text-sm text-[12px] text-[#E2E2E4]">
+                        7:56 AM
+                      </span>
+                    </div>
+                    <span className="text-[#E2E2E4] text-left text-sm ">
                       Your post is trending in the hot section.
                     </span>
                   </div>
-                  <span className="ml-3 text-sm ">7:56 AM</span>
                 </div>
 
                 <div
@@ -97,13 +106,19 @@ const Header = () => {
                     src={AvatarPNG}
                     alt="avatar"
                   />
-                  <div className="flex flex-col items-start">
-                    <span className="text-white">Trending</span>
-                    <span className="text-[#aaabb6] text-left">
+                  <div className="flex flex-col items-start w-full">
+                    <div className="flex justify-between items-center w-full">
+                      <span className="text -white font-semibold">
+                        Trending
+                      </span>
+                      <span className="ml-3 text-sm text-[12px] text-[#E2E2E4]">
+                        7:56 AM
+                      </span>
+                    </div>
+                    <span className="text-[#E2E2E4] text-left text-sm ">
                       Your post is trending in the hot section.
                     </span>
                   </div>
-                  <span className="ml-3 text-sm ">7:56 AM</span>
                 </div>
 
                 <div
@@ -117,13 +132,19 @@ const Header = () => {
                     src={AvatarPNG}
                     alt="avatar"
                   />
-                  <div className="flex flex-col items-start">
-                    <span className="text-white">Trending</span>
-                    <span className="text-[#aaabb6] text-left">
+                  <div className="flex flex-col items-start w-full">
+                    <div className="flex justify-between items-center w-full">
+                      <span className="text -white font-semibold">
+                        Trending
+                      </span>
+                      <span className="ml-3 text-sm text-[12px] text-[#E2E2E4]">
+                        7:56 AM
+                      </span>
+                    </div>
+                    <span className="text-[#E2E2E4] text-left text-sm ">
                       Your post is trending in the hot section.
                     </span>
                   </div>
-                  <span className="ml-3 text-sm ">7:56 AM</span>
                 </div>
 
                 <div
@@ -137,13 +158,19 @@ const Header = () => {
                     src={AvatarPNG}
                     alt="avatar"
                   />
-                  <div className="flex flex-col items-start">
-                    <span className="text-white">Trending</span>
-                    <span className="text-[#aaabb6] text-left">
+                  <div className="flex flex-col items-start w-full">
+                    <div className="flex justify-between items-center w-full">
+                      <span className="text -white font-semibold">
+                        Trending
+                      </span>
+                      <span className="ml-3 text-sm text-[12px] text-[#E2E2E4]">
+                        7:56 AM
+                      </span>
+                    </div>
+                    <span className="text-[#E2E2E4] text-left text-sm ">
                       Your post is trending in the hot section.
                     </span>
                   </div>
-                  <span className="ml-3 text-sm ">7:56 AM</span>
                 </div>
               </div>
             )}
