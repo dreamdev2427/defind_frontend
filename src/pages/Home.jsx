@@ -73,8 +73,8 @@ export const exampleItems = [
 
 const Home = () => {
   return (
-    <div className="w-full h-full min-h-[100vh] flex flex-col items-center ">
-      <div className="container">
+    <div className="w-full h-full min-h-[100vh] flex flex-col items-center overflow-x-hidden">
+      <div className="container overflow-x-hidden">
         <div className="text-white mb-2  text-left text-2xl font-semibold ">
           Featured
         </div>

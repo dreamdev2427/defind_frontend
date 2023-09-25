@@ -1,12 +1,11 @@
-import NotificationSlider from "../components/NotificationSlider/NotificationSlider";
 import { exampleItems } from "./Home";
 import DownArrowIcon from "../assets/downarrrowIcon.png";
 import NotificationIcon from "../assets/notificationicon.png";
 
 const Calendar = () => {
   return (
-    <div className="w-full h-full min-h-[100vh]  flex flex-col items-center">
-      <div className="container">
+    <div className="w-full h-full min-h-[100vh]  flex flex-col items-center overflow-x-hidden">
+      <div className="container overflow-x-hidden">
         <div className="text-white  text-left text-2xl font-medium pb-2">
           Calendar
         </div>
@@ -32,7 +31,7 @@ const Calendar = () => {
           </div>
         </div>
         <div className="border-[1px] border-[#1d1d1d] mt-2"></div>
-        <div className="mt-5 w-full flex flex-wrap justify-between gap-10">
+        <div className="mt-5 w-full flex flex-wrap justify-between gap-10 overflow-x-hidden">
           {exampleItems.map((item, index) => (
             <div key={index}>
               <div className="w-[298px] h-[160px] transform hover:scale-110 transition-transform duration-150 ease-out relative">

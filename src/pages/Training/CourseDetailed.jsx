@@ -3,6 +3,7 @@ import FilledWatchIcon from "../../assets/filledWatchIcon.svg";
 import FilledDocIcon from "../../assets/filledDocIcon.svg";
 import SoloPlayIcon from "../../assets/solar_play-bold.svg";
 import SoloPauseIcon from "../../assets/solar_pause-bold.svg";
+import PlayButton from "../../assets/Play.png";
 
 const CourseDetailed = () => {
   return (
@@ -12,12 +13,19 @@ const CourseDetailed = () => {
           Formation 1: Blockchain Deep Dive
         </div>
         <div className="mt-5 flex flex-col md:flex-row justify-between ">
-          <div className="flex justify-center">
+          <div className="flex justify-center items-center relative">
             <img
               src={CourseBanner}
               className="max-w-[700px] h-[564px] object-cover"
               alt="course banner"
             />
+            <div className="absolute w-full h-full flex justify-center items-center z-5">
+              <img
+                src={PlayButton}
+                className="w-[166px] h-[70px] cursor-pointer"
+                alt="play button"
+              />
+            </div>
           </div>
           <div className="flex flex-col min-w-[520px] max-h-[564px] overflow-y-scroll">
             <div className=" bg-[#27272f] rounded-2xl w-[520px] min-h-[100px] flex justify-between items-center px-5 mb-5  mr-5">

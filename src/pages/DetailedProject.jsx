@@ -1,6 +1,6 @@
 import ProjectCardPNG from "../assets/projectcard.png";
 import OrbitorLogo from "../assets/orbiterlogo.png";
-import VerifiedIcon from "../assets/verified.png";
+import VerifiedIcon from "../assets/yellowcheck.svg";
 import AvatarIcon from "../assets/Avatar.png";
 import PrimaryButton from "../components/PrimaryButton";
 

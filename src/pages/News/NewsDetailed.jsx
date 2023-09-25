@@ -1,9 +1,8 @@
-import Secnewbanner from "../../assets/secnewsbanner.png";
+import Secnewbanner from "../../assets/coursebanner.png";
 import TwitterIcon from "../../assets/icon-twitter-fill.png";
 import TelegramIcon from "../../assets/icon-telegram-fill.png";
 import NotificationIcon from "../../assets/icon-notification-fill.png";
 import IstanbulBanner from "../../assets/istanbulnewsbanner.png";
-import SecBanner from "../../assets/secnewsbanner.png";
 import OnlyfansBanner from "../../assets/onlyfansnewsbanner.png";
 
 import { useNavigate } from "react-router-dom";
@@ -106,14 +105,18 @@ const NewsDetails = () => {
       <div className="mt-20 mb-5 w-8/12 flex justify-start flex-wrap gap-5 text-white text-4xl text-left">
         Related articles
       </div>
-      <div className=" w-9/12 flex justify-center flex-wrap gap-5">
+      <div className=" w-full flex justify-center flex-wrap gap-1">
         <div
-          className="flex flex-col items-start w-[420px] mt-10 
-                  transform hover:scale-105 transition-transform duration-150 ease-out 
+          className="flex flex-col items-start w-[380px] mt-10 
+                  transform scale-90 hover:scale-95 transition-transform duration-150 ease-out 
           "
           onClick={() => navigate("/detailed_news")}
         >
-          <img src={SecBanner} className="w-full h-[220px]" alt="news banner" />
+          <img
+            src={Secnewbanner}
+            className="w-full h-[220px]"
+            alt="news banner"
+          />
           <div className="mt-3 text-[#5BDFE4] text-md font-medium text-left">
             Crypto News
           </div>
@@ -138,8 +141,8 @@ const NewsDetails = () => {
         </div>
 
         <div
-          className="flex flex-col items-start w-[420px] mt-10 
-                  transform hover:scale-105 transition-transform duration-150 ease-out 
+          className="flex flex-col items-start w-[380px] mt-10 
+                  transform scale-90 hover:scale-95 transition-transform duration-150 ease-out 
           "
           onClick={() => navigate("/detailed_news")}
         >
@@ -172,8 +175,8 @@ const NewsDetails = () => {
         </div>
 
         <div
-          className="flex flex-col items-start w-[420px] mt-10 
-                  transform hover:scale-105 transition-transform duration-150 ease-out 
+          className="flex flex-col items-start w-[380px] mt-10 
+                  transform scale-90 hover:scale-95 transition-transform duration-150 ease-out 
           "
           onClick={() => navigate("/detailed_news")}
         >

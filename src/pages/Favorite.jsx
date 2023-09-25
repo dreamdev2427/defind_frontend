@@ -3,8 +3,8 @@ import { exampleItems } from "./Home";
 
 const Favorite = () => {
   return (
-    <div className="w-full h-full min-h-[100vh] flex flex-col items-center">
-      <div className="container">
+    <div className="w-full h-full min-h-[100vh] flex flex-col items-center overflow-x-hidden">
+      <div className="container overflow-x-hidden">
         <div className="text-white text-left text-2xl font-medium pb-4">
           My List
         </div>
@@ -33,7 +33,7 @@ const Favorite = () => {
           </div>
         </div>
         <div className="border-[1px] border-[#1d1d1d]  mt-4"></div>
-        <div className="mt-6 flex flex-wrap justify-between ">
+        <div className="mt-6 flex flex-wrap justify-between overflow-x-hidden">
           {exampleItems.map((item, index) => (
             <div key={index} className="pb-9 ">
               <div className="w-[200px] h-[140px] transform hover:scale-105 transition-transform duration-150 ease-out relative">
