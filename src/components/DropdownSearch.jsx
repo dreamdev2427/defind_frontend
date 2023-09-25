@@ -51,7 +51,7 @@ function DropdownSearch() {
       className="relative"
     >
       {isHovered ? (
-        <div className="absolute left-0 transform -translate-x-full transition-transform duration-300">
+        <div className="absolute top-2 left-0 transform -translate-x-full transition-transform duration-300">
           <input
             ref={inputRef}
             type="text"
@@ -68,11 +68,11 @@ function DropdownSearch() {
             className="pl-10 pr-2 py-1 min-w-[230px] border-[#4C4C56] bg-[#1D1D25] text-white focus:border-[#4C4C56] hover:border-[#4C4C56] rounded"
           />
           <span className="absolute inset-y-0 left-0 flex items-center pl-2">
-            <img src={SearchSVG} alt="search icon" className="w-8 h-8"></img>
+            <img src={SearchSVG} alt="search icon" className="w-10 h-10"></img>
           </span>
         </div>
       ) : (
-        <img src={SearchSVG} alt="search icon" className="w-8 h-8"></img>
+        <img src={SearchSVG} alt="search icon" className="w-10 h-10"></img>
       )}
       {showDropdown && (
         <div className="absolute right-0 top-8 pt-1 min-w-[230px] z-20  ">
