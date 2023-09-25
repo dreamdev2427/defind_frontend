@@ -5,7 +5,7 @@ import {
   Tab,
   TabPanel,
 } from "@material-tailwind/react";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import AvatarImg from "../assets/avatar2.png";
 import VerifiedBlueTick from "../assets/VerifiedBlueTick.png";
 import CopyIcon from "../assets/copy.svg";
@@ -61,12 +61,12 @@ const Profile = () => {
   const [ethActivity, setEthActivity] = useState(false);
 
   return (
-    <div className="w-full min-h-[100vh] flex justify-center">
+    <div className="w-full min-h-[100vh] flex flex-col items-center">
       <div className="container">
-        <div className="mt-5 text-white font-bold text-xl border-b-[#4C4C56] border-[1px] pb-4 text-left px-10">
+        <div className=" text-white font-medium text-2xl border-b-[#4C4C56] border-[1px] pb-4 text-left ">
           Settings
         </div>
-        <Tabs value="html" orientation="vertical" className="px-10 mt-8">
+        <Tabs value="html" orientation="vertical" className="mt-8">
           <TabsHeader
             className="w-56 px-6 py-6 border-[#1D1D25] border-[1px] rounded-xl bg-[#1D1D25] min-h-[70vh]  "
             indicatorProps={{
@@ -78,11 +78,11 @@ const Profile = () => {
                 key={value}
                 value={value}
                 onClick={() => setActiveTab(value)}
-                className={
+                className={`${
                   activeTab === value
                     ? "text-white bg-[#666875] rounded-lg "
                     : "text-[#aaabb6] bg-transparent"
-                }
+                } text-sm font-semibold h-[44px] `}
               >
                 {label}
               </Tab>
@@ -92,26 +92,26 @@ const Profile = () => {
             <TabPanel
               key={"mydetails"}
               value={"mydetails"}
-              className="py-0 px-10 min-h-[100vh]"
+              className="py-0 pl-10 min-h-[100vh] "
             >
               <div className="flex justify-between pb-5 border-b-[#4C4C56] border-b-[1px]">
                 <div className="flex justify-start ">
                   <div className="relative">
                     <img
                       src={AvatarImg}
-                      className="w-40 h-40 rounded-full "
+                      className="w-[154px] h-[154px]  rounded-full "
                       alt="user avatar"
                     />
                     {isInEditionOfProofile === false ? (
                       <img
                         src={VerifiedBlueTick}
-                        className="w-8 h-8 absolute bottom-0 right-4"
+                        className="w-6 h-6 absolute bottom-0 right-6"
                         alt="verified icon"
                       />
                     ) : (
                       <img
                         src={Editicon}
-                        className="w-8 h-8 absolute bottom-0 right-4"
+                        className="w-6 h-6 absolute bottom-0 right-6"
                         alt="verified icon"
                       />
                     )}
@@ -120,7 +120,7 @@ const Profile = () => {
                     <div className="text-3xl text-white text-left">
                       Jenifer Loren
                     </div>
-                    <div className="text-[#aaabb6] flex items-center">
+                    <div className="text-[#aaabb6] flex items-center font-medium">
                       0x4a2e0x4a2e0x4a2e...0x4a2e3b9c
                       <img
                         src={CopyIcon}
@@ -132,27 +132,33 @@ const Profile = () => {
                       <div className="flex items-center ">
                         <div className="mt-8 flex gap-10">
                           <div className="flex flex-col">
-                            <div className="bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] bg-clip-text text-transparent text-3xl font-semibold">
+                            <div className="bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] bg-clip-text text-transparent text-2xl font-semibold">
                               899
                             </div>
-                            <div className="text-[#aaabb6] flex">Following</div>
+                            <div className="text-[#aaabb6] flex font-medium">
+                              Following
+                            </div>
                           </div>
                           <div className="flex flex-col">
-                            <div className="bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] bg-clip-text text-transparent text-3xl font-semibold">
+                            <div className="bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] bg-clip-text text-transparent text-2xl font-semibold">
                               1.5k
                             </div>
-                            <div className="text-[#aaabb6]">Followers</div>
+                            <div className="text-[#aaabb6] font-medium">
+                              Followers
+                            </div>
                           </div>
                           <div className="flex flex-col">
-                            <div className="bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] bg-clip-text text-transparent text-3xl font-semibold">
+                            <div className="bg-gradient-to-r from-[#5BDFE4] to-[#024CAD] bg-clip-text text-transparent text-2xl font-semibold">
                               1.3k
                             </div>
-                            <div className="text-[#aaabb6]">Dcoins</div>
+                            <div className="text-[#aaabb6] font-medium">
+                              Dcoins
+                            </div>
                           </div>
                         </div>
                         <PrimaryButton
                           className={
-                            "w-28 h-10 text-white font-bold ml-10 mt-8"
+                            "w-[93px] h-10 text-white font-semibold text-sm ml-10 mt-8 rounded-lg"
                           }
                           label={"Follow"}
                         />
@@ -170,7 +176,9 @@ const Profile = () => {
                 <div className="flex justify-end">
                   {isInEditionOfProofile === false ? (
                     <button
-                      className={"bg-[#666875] w-24 h-10 rounded-lg text-white"}
+                      className={
+                        "bg-[#666875] w-24 h-10 rounded-lg text-white text-sm font-medium"
+                      }
                       onClick={() => setIsInEditionOfProfile(true)}
                     >
                       Edit
@@ -182,7 +190,7 @@ const Profile = () => {
               </div>
               {isInEditionOfProofile === false ? (
                 <>
-                  <div className="text-[#aaabb6] my-5 text-left">
+                  <div className="text-[#aaabb6] my-5 text-left text-sm">
                     The Avengers began as a group of extraordinary his Chitauri
                     army in New York City rosterThe Avengers began as a group of
                     extraordinary his Chitauri army in New York City rosteThe
@@ -196,14 +204,14 @@ const Profile = () => {
                   </div>
                   <div className="bg-[#4C4C56] rounded-xl text-[#aaabb6] px-10 py-5">
                     <table>
-                      <thead>
-                        <th>Website</th>
-                        <th>Portfolio</th>
-                        <th>Email</th>
+                      <thead className="font-medium text-sm">
+                        <th align="left">Website</th>
+                        <th align="left">Portfolio</th>
+                        <th align="left">Email</th>
                       </thead>
                       <tbody>
-                        <tr className="text-white">
-                          <td className="px-5">
+                        <tr className="text-white font-semibold ">
+                          <td align="left" className="pr-10">
                             <div className="flex items-center">
                               zahirmays.com
                               <img
@@ -213,7 +221,7 @@ const Profile = () => {
                               ></img>
                             </div>
                           </td>
-                          <td className="px-5">
+                          <td align="left" className="pr-10">
                             <div className="flex items-center">
                               @zahir
                               <img
@@ -223,7 +231,7 @@ const Profile = () => {
                               ></img>
                             </div>
                           </td>
-                          <td className="px-5">
+                          <td align="left" className="pr-10">
                             <div className="flex items-center">
                               hello@zahirmays.com
                               <img
@@ -242,7 +250,7 @@ const Profile = () => {
                 <div className="flex justify-center">
                   <div className="w-6/12 ">
                     <div className="mt-10 rounded-[16px] border-[1px] border-[#35383d] min-w-[480px] min-h-[64px] flex flex-col items-start flex-0 px-4 justify-center">
-                      <div className="text-[#aaabb6] text-sm">Email</div>
+                      <div className="text-[#aaabb6] text-[12px]">Email</div>
                       <input
                         placeholder="email"
                         className="text-white text-md bg-transparent border-none w-full hover:border-none focus:border-none"
@@ -250,7 +258,7 @@ const Profile = () => {
                       ></input>
                     </div>
                     <div className="mt-3 rounded-[16px] border-[1px] border-[#35383d] min-w-[480px] min-h-[64px] flex flex-col items-start flex-0 px-4 justify-center">
-                      <div className="text-[#aaabb6] text-sm">Name</div>
+                      <div className="text-[#aaabb6] text-[12px]">Name</div>
                       <input
                         placeholder="name"
                         className="text-white text-md bg-transparent border-none w-full hover:border-none focus:border-none"
@@ -258,7 +266,9 @@ const Profile = () => {
                       ></input>
                     </div>
                     <div className="mt-3 rounded-[16px] border-[1px] border-[#35383d] min-w-[480px] min-h-[64px] flex flex-col items-start flex-0 px-4 justify-center">
-                      <div className="text-[#aaabb6] text-sm">User Name</div>
+                      <div className="text-[#aaabb6] text-[12px]">
+                        User Name
+                      </div>
                       <input
                         placeholder="user name"
                         className="text-white text-md bg-transparent border-none w-full hover:border-none focus:border-none"
@@ -266,7 +276,9 @@ const Profile = () => {
                       ></input>
                     </div>
                     <div className="mt-3 rounded-[16px] border-[1px] border-[#35383d] min-w-[480px] min-h-[64px] flex flex-col items-start flex-0 px-4 justify-center">
-                      <div className="text-[#aaabb6] text-sm">Phone Number</div>
+                      <div className="text-[#aaabb6] text-[12px]">
+                        Phone Number
+                      </div>
                       <input
                         placeholder="phone number"
                         className="text-white text-md bg-transparent border-none w-full hover:border-none focus:border-none"
@@ -275,7 +287,9 @@ const Profile = () => {
                     </div>
                     <div className="mt-3 rounded-[16px] border-[1px] border-[#35383d] min-w-[480px] min-h-[64px] flex  px-4 justify-between">
                       <div className="flex flex-col items-start justify-center ">
-                        <div className="text-[#aaabb6] text-sm">Password</div>
+                        <div className="text-[#aaabb6] text-[12px]">
+                          Password
+                        </div>
                         <input
                           placeholder="password"
                           type="password"
@@ -293,7 +307,7 @@ const Profile = () => {
                     </div>
                     <div className="mt-3 rounded-[16px] border-[1px] border-[#35383d] min-w-[480px] min-h-[64px] flex  px-4 justify-between">
                       <div className="flex flex-col items-start justify-center ">
-                        <div className="text-[#aaabb6] text-sm">
+                        <div className="text-[#aaabb6] text-[12px]">
                           Wallet address
                         </div>
                         <input
@@ -329,7 +343,7 @@ const Profile = () => {
             <TabPanel
               key={"mycryptoprojects"}
               value={"mycryptoprojects"}
-              className="py-0 px-10 min-h-[100vh]"
+              className="py-0 pl-10 min-h-[100vh]"
             >
               <div className="text-lg text-white text-left ml-10">
                 My projects
@@ -346,7 +360,7 @@ const Profile = () => {
             <TabPanel
               key={"password"}
               value={"password"}
-              className="py-0 px-10 min-h-[100vh]"
+              className="py-0 pl-10 min-h-[100vh]"
             >
               <div className="text-lg text-white text-center ml-10">
                 Change password
@@ -355,7 +369,7 @@ const Profile = () => {
                 <div className="w-6/12">
                   <div className="mt-3 rounded-[16px] border-[1px] border-[#35383d] min-w-[480px] min-h-[64px] flex  px-4 justify-between">
                     <div className="flex flex-col items-start justify-center ">
-                      <div className="text-[#aaabb6] text-sm">
+                      <div className="text-[#aaabb6] text-[12px]">
                         Current Password
                       </div>
                       <input
@@ -374,7 +388,9 @@ const Profile = () => {
                   </div>
                   <div className="mt-3 rounded-[16px] border-[1px] border-[#35383d] min-w-[480px] min-h-[64px] flex  px-4 justify-between">
                     <div className="flex flex-col items-start justify-center ">
-                      <div className="text-[#aaabb6] text-sm">New Password</div>
+                      <div className="text-[#aaabb6] text-[12px]">
+                        New Password
+                      </div>
                       <input
                         placeholder="Type here..."
                         type="password"
@@ -391,7 +407,7 @@ const Profile = () => {
                   </div>
                   <div className="mt-3 rounded-[16px] border-[1px] border-[#35383d] min-w-[480px] min-h-[64px] flex  px-4 justify-between">
                     <div className="flex flex-col items-start justify-center ">
-                      <div className="text-[#aaabb6] text-sm">
+                      <div className="text-[#aaabb6] text-[12px]">
                         Confirm New Password
                       </div>
                       <input
@@ -418,7 +434,7 @@ const Profile = () => {
             <TabPanel
               key={"notifications"}
               value={"notifications"}
-              className="py-0 px-10 min-h-[100vh]"
+              className="py-0 pl-10 min-h-[100vh]"
             >
               <div className="text-lg text-white text-left">Notifications</div>
               <div className="bg-[#1D1D25] rounded-2xl px-5 py-8 mt-5 w-full ">
@@ -533,7 +549,7 @@ const Profile = () => {
             <TabPanel
               key={"feed"}
               value={"feed"}
-              className="py-0 px-10 min-h-[100vh]"
+              className="py-0 pl-10 min-h-[100vh]"
             >
               <div className="flex justify-between items-center border-b-[#4C4C56] border-b-[1px] pb-5 ">
                 <div className="flex flex-col">
@@ -870,12 +886,12 @@ const Profile = () => {
             <TabPanel
               key={"theme"}
               value={"theme"}
-              className="py-0 px-10 min-h-[100vh]"
+              className="py-0 pl-10 min-h-[100vh]"
             ></TabPanel>
             <TabPanel
               key={"version"}
               value={"version"}
-              className="py-0 px-10 min-h-[100vh]"
+              className="py-0 pl-10 min-h-[100vh]"
             ></TabPanel>
           </TabsBody>
         </Tabs>

@@ -16,7 +16,7 @@ const SignUp = () => {
         <div className="text-3xl">Sign Up</div>
 
         <div className="mt-10 rounded-[16px] border-[1px] border-[#35383d] min-w-[480px] min-h-[64px] flex flex-col items-start flex-0 px-4 justify-center">
-          <div className="text-[#aaabb6] text-sm">Email</div>
+          <div className="text-[#aaabb6] text-[12px]">Email</div>
           <input
             placeholder="email"
             className="text-white text-md bg-transparent border-none w-full hover:border-none focus:border-none"
@@ -25,7 +25,7 @@ const SignUp = () => {
         </div>
 
         <div className="mt-3 rounded-[16px] border-[1px] border-[#35383d] min-w-[480px] min-h-[64px] flex flex-col items-start flex-0 px-4 justify-center">
-          <div className="text-[#aaabb6] text-sm">Name</div>
+          <div className="text-[#aaabb6] text-[12px]">Name</div>
           <input
             placeholder="name"
             className="text-white text-md bg-transparent border-none w-full hover:border-none focus:border-none"
@@ -34,7 +34,7 @@ const SignUp = () => {
         </div>
 
         <div className="mt-3 rounded-[16px] border-[1px] border-[#35383d] min-w-[480px] min-h-[64px] flex flex-col items-start flex-0 px-4 justify-center">
-          <div className="text-[#aaabb6] text-sm">User Name</div>
+          <div className="text-[#aaabb6] text-[12px]">User Name</div>
           <input
             placeholder="user name"
             className="text-white text-md bg-transparent border-none w-full hover:border-none focus:border-none"
@@ -43,7 +43,7 @@ const SignUp = () => {
         </div>
 
         <div className="mt-3 rounded-[16px] border-[1px] border-[#35383d] min-w-[480px] min-h-[64px] flex flex-col items-start flex-0 px-4 justify-center">
-          <div className="text-[#aaabb6] text-sm">Phone Number</div>
+          <div className="text-[#aaabb6] text-[12px]">Phone Number</div>
           <input
             placeholder="phone number"
             className="text-white text-md bg-transparent border-none w-full hover:border-none focus:border-none"
@@ -53,7 +53,7 @@ const SignUp = () => {
 
         <div className="mt-3 rounded-[16px] border-[1px] border-[#35383d] min-w-[480px] min-h-[64px] flex  px-4 justify-between">
           <div className="flex flex-col items-start justify-center ">
-            <div className="text-[#aaabb6] text-sm">Password</div>
+            <div className="text-[#aaabb6] text-[12px]">Password</div>
             <input
               placeholder="password"
               type="password"
@@ -68,7 +68,7 @@ const SignUp = () => {
 
         <div className="mt-3 rounded-[16px] border-[1px] border-[#35383d] min-w-[480px] min-h-[64px] flex  px-4 justify-between">
           <div className="flex flex-col items-start justify-center ">
-            <div className="text-[#aaabb6] text-sm">Wallet address</div>
+            <div className="text-[#aaabb6] text-[12px]">Wallet address</div>
             <input
               placeholder="wallet address"
               className="text-white text-md bg-transparent border-none w-full hover:border-none focus:border-none"
